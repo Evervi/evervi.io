@@ -22,7 +22,7 @@ function About() {
             </div>
 
             <div className="About__Image">
-                <img src="https://source.unsplash.com/aWf7mjwwJJo" />
+                <img src="https://source.unsplash.com/aWf7mjwwJJo" alt="AboutUs" />
             </div>
 
             <div className="About__Shadow">
