@@ -1,0 +1,47 @@
+.Navbar {
+    background: white;
+
+    height: 100px;
+    padding: 0 32px;
+
+    max-width: $containerWidth;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & h1 {
+        font-family: "Futura Pt Book";
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 42px;
+
+        opacity: .65;
+        transition: opacity 355ms ease;
+
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.Navbar__menu {
+    display: block;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.Navbar__mobile-menu {
+    display: none;
+
+    @media (max-width: 600px) {
+        display: block;
+    }
+}

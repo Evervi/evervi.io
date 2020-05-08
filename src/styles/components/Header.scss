@@ -1,0 +1,28 @@
+.Header {
+    position: relative;
+    width: 100%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+    height: calc(100vh - 100px); /* Odejmujemy wysokość ekranu od wysokości NavBar */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.Header__side {
+    width: 500px;
+    padding: 0 32px;
+}
+
+.Header__side--wide {
+    width: 600px;
+}

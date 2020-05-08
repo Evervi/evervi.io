@@ -1,0 +1,82 @@
+.Offer {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    
+    
+}
+
+.Offer__container {
+    background: $primary;
+    color: white;
+    
+    
+    display: flex;
+    flex-wrap: wrap; /* zawija elementy pod siebie gdy sa wieksze niz szerokosc ekranu */
+    justify-content: space-between; /* poziomo dajesz odstep miedzy kazdym elementem */
+    align-items: center; /* pionowo srodkujesz */
+
+    &:nth-child(even) {
+        background: white;
+        color: black;
+
+        flex-direction: row-reverse;
+
+        & .Offer__container__side__image__slope {
+            clip-path: polygon(50% 0, 100% 0%, 100% 100%, 100% 100%);
+            background: white;
+            right: 0;
+        }
+    }
+
+    &__side {
+        flex-basis: 50%;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        & h3 {
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        & p {
+            font-size: 18px;
+            margin-top: 6px;
+        }
+
+        & i {
+            font-size: 32px;
+            flex-basis: 38px;
+            margin: 0 1.5rem;
+        }
+        
+        &__image {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+
+            & img {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &__slope {
+                position: absolute;
+                width: 16vw;
+                height: 100%;
+                overflow: hidden;
+                clip-path: polygon(0 0, 50% 0%, 0% 100%, 0% 100%);
+                background: $primary;
+            }
+        }
+    }
+}
+
