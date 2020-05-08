@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e6ecbe6.chunk.css",
-    "main.js": "/static/js/main.d646b1aa.chunk.js",
-    "main.js.map": "/static/js/main.d646b1aa.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.31f82c75.js",
-    "runtime-main.js.map": "/static/js/runtime-main.31f82c75.js.map",
-    "static/js/2.49782817.chunk.js": "/static/js/2.49782817.chunk.js",
-    "static/js/2.49782817.chunk.js.map": "/static/js/2.49782817.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.04d1f9491c60238ff1facbb4d132f435.js": "/precache-manifest.04d1f9491c60238ff1facbb4d132f435.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.4e6ecbe6.chunk.css.map": "/static/css/main.4e6ecbe6.chunk.css.map",
-    "static/js/2.49782817.chunk.js.LICENSE.txt": "/static/js/2.49782817.chunk.js.LICENSE.txt",
-    "static/media/undraw_connected_world_wuay.568c98f9.svg": "/static/media/undraw_connected_world_wuay.568c98f9.svg"
+    "main.css": "/evervi.io/static/css/main.4e6ecbe6.chunk.css",
+    "main.js": "/evervi.io/static/js/main.55a5fbe0.chunk.js",
+    "main.js.map": "/evervi.io/static/js/main.55a5fbe0.chunk.js.map",
+    "runtime-main.js": "/evervi.io/static/js/runtime-main.5fe481cf.js",
+    "runtime-main.js.map": "/evervi.io/static/js/runtime-main.5fe481cf.js.map",
+    "static/js/2.49782817.chunk.js": "/evervi.io/static/js/2.49782817.chunk.js",
+    "static/js/2.49782817.chunk.js.map": "/evervi.io/static/js/2.49782817.chunk.js.map",
+    "index.html": "/evervi.io/index.html",
+    "precache-manifest.523f8cca651b958427eed7c2f3fa454e.js": "/evervi.io/precache-manifest.523f8cca651b958427eed7c2f3fa454e.js",
+    "service-worker.js": "/evervi.io/service-worker.js",
+    "static/css/main.4e6ecbe6.chunk.css.map": "/evervi.io/static/css/main.4e6ecbe6.chunk.css.map",
+    "static/js/2.49782817.chunk.js.LICENSE.txt": "/evervi.io/static/js/2.49782817.chunk.js.LICENSE.txt",
+    "static/media/undraw_connected_world_wuay.568c98f9.svg": "/evervi.io/static/media/undraw_connected_world_wuay.568c98f9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.31f82c75.js",
+    "static/js/runtime-main.5fe481cf.js",
     "static/js/2.49782817.chunk.js",
     "static/css/main.4e6ecbe6.chunk.css",
-    "static/js/main.d646b1aa.chunk.js"
+    "static/js/main.55a5fbe0.chunk.js"
   ]
 }
