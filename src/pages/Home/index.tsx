@@ -3,6 +3,7 @@ import Offer from './Offer';
 import Header from './Header';
 import About from './About';
 import SocialMedia from "./SocialMedia";
+import Portfolio from "./Portfolio";
 
 function Home() {
 
@@ -12,6 +13,7 @@ function Home() {
             <Offer />
             <About />
             <SocialMedia />
+            <Portfolio />
         </div>
     );
 }
