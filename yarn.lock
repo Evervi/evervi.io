@@ -8869,6 +8869,11 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-littera@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-littera/-/react-littera-1.2.2.tgz#3d2a6c681dc7b19aa091841d41d61dc42349c06a"
+  integrity sha512-teurGp7epIO5/cJ3YUAsfWBFVY5G2xWv8gHv9tgu3n5gi4/79UKvJH6HKk4Wg1SbFqOsFH0HcyM/BbTdme6zeg==
+
 react-scripts@3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.4.1.tgz#f551298b5c71985cc491b9acf3c8e8c0ae3ada0a"
