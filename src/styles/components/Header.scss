@@ -12,15 +12,20 @@
 
     overflow: hidden;
 
-    @media (max-width: 600px) {
+    @media (maxwidth: 600px) {
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    & p {
+        text-align: justify !important;
     }
 }
 
 .Header__side {
     width: 500px;
     padding: 0 32px;
+    position: relative;
 
     &__shape {
         //border-radius: 30% 70% 69% 31% / 30% 27% 73% 70%;
@@ -31,16 +36,29 @@
         position: relative;
         box-shadow: 0 14px 40px 0px rgba(0, 0, 0, 0.1), 0 5px 11px 0px rgba(0, 0, 0, 0.08);
 
-        animation: morph 8s ease-in-out infinite;
+        animation: morph 10s ease-in-out infinite;
 
         & img {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) rotate(-3deg);
-            animation: rotateImage 12s ease-in-out infinite;
+            transform: translate(-50%, -50%);
             z-index: 1;
         }
+    }
+
+    &__dotty {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        width: 770px;
+        height: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        background: url(../../assets/dotty.svg);
+        opacity: 0.1;
+        background-size: 24px;
     }
 
     &__shadow {
@@ -49,33 +67,32 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to top left, rgba($primary, .6) 5%, rgba($primary, .0));
+        background: linear-gradient(to top left, rgba($primary, 0.4) 5%, rgba($primary, .08));
+        background-size: 600% 600%;
         z-index: 2;
+        animation: shadowGradient 10s ease-in-out infinite;
     }
 }
 
 @keyframes morph {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        transform: rotate(-3deg);
     }
     50% {
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        transform: rotate(3deg);
     }
     100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        transform: rotate(-3deg);
     }
 }
 
-@keyframes rotateImage {
-    0% {
-        transform: translate(-50%, -50%) rotate(-3deg);
-    }
-    50% {
-        transform: translate(-50%, -50%) rotate(3deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(-3deg);
-    }
+@keyframes shadowGradient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
 }
 
 .Header__side--wide {
