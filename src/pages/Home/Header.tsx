@@ -13,7 +13,7 @@ function Header() {
         <div className="Header__side">
             <div className="Header__side__shape">
                 <div className="Header__side__shadow"></div>
-                <img src="https://source.unsplash.com/tbdAwwKYOMQ/700x700" />
+                <img src="https://source.unsplash.com/tbdAwwKYOMQ/700x700"  alt="header"/>
             </div>
         </div>
     </div>
