@@ -1,3 +1,21 @@
+$colors: ( 
+    facebook: #0096F6,
+    facebook-hover: darken(#0096F6, 10%), 
+
+    twitter: #1DA1F2,
+    twitter-hover: darken(#1DA1F2, 4%),
+
+    github: #24292E,
+    github-hover: lighten(#24292E, 10%),
+
+    youtube: #F13200,
+    youtube-hover: lighten(#F13200, 8%)
+);
+
+@mixin set-media-color($media) {
+    fill: map-get($colors, $media);
+}
+
 .MediaIcon {
     width: 88px;
     height: 88px;
@@ -5,7 +23,36 @@
     border-radius: 88px;
     box-shadow: 0 2.74416px 2.74416px rgba(0,0,0,.0274351), 0 5.48831px 5.48831px rgba(0,0,0,.0400741), 0 13.7208px 10.9766px rgba(0,0,0,.0499982), 0 20.5812px 20.5812px rgba(0,0,0,.0596004), 0 41.1623px 41.1623px rgba(0,0,0,.0709366), 0 96.0454px 89.1851px rgba(0,0,0,.09);
     position: relative;
+    transition: fill 255ms ease-in-out;
+ 
+    /** Dodawanie koloru dla ikon social media */
+    &--facebook {
+        @include set-media-color("facebook");
+        &:hover {
+            @include set-media-color("facebook-hover");
+        }
+    }
+
+    &--twitter {
+        @include set-media-color("twitter");
+        &:hover {
+            @include set-media-color("twitter-hover");
+        }
+    }
     
+    &--github {
+        @include set-media-color("github");
+        &:hover {
+            @include set-media-color("github-hover");
+        }
+    }
+
+    &--youtube {
+        @include set-media-color("youtube");
+        &:hover {
+            @include set-media-color("youtube-hover");
+        }
+    }
 }
 
 .MediaIcon:nth-child(2n+1) {
