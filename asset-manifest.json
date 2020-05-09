@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/evervi.io/static/css/main.b3dc2b49.chunk.css",
-    "main.js": "/evervi.io/static/js/main.7634b5c6.chunk.js",
-    "main.js.map": "/evervi.io/static/js/main.7634b5c6.chunk.js.map",
+    "main.css": "/evervi.io/static/css/main.c4846beb.chunk.css",
+    "main.js": "/evervi.io/static/js/main.3b1273da.chunk.js",
+    "main.js.map": "/evervi.io/static/js/main.3b1273da.chunk.js.map",
     "runtime-main.js": "/evervi.io/static/js/runtime-main.5fe481cf.js",
     "runtime-main.js.map": "/evervi.io/static/js/runtime-main.5fe481cf.js.map",
     "static/js/2.a70e3716.chunk.js": "/evervi.io/static/js/2.a70e3716.chunk.js",
     "static/js/2.a70e3716.chunk.js.map": "/evervi.io/static/js/2.a70e3716.chunk.js.map",
     "index.html": "/evervi.io/index.html",
-    "precache-manifest.fb434461215a906923cddd33c6c54795.js": "/evervi.io/precache-manifest.fb434461215a906923cddd33c6c54795.js",
+    "precache-manifest.a214ed28514454b3c28ef109205856be.js": "/evervi.io/precache-manifest.a214ed28514454b3c28ef109205856be.js",
     "service-worker.js": "/evervi.io/service-worker.js",
-    "static/css/main.b3dc2b49.chunk.css.map": "/evervi.io/static/css/main.b3dc2b49.chunk.css.map",
+    "static/css/main.c4846beb.chunk.css.map": "/evervi.io/static/css/main.c4846beb.chunk.css.map",
     "static/js/2.a70e3716.chunk.js.LICENSE.txt": "/evervi.io/static/js/2.a70e3716.chunk.js.LICENSE.txt",
     "static/media/hollow-cut-facebook.dde57e4a.svg": "/evervi.io/static/media/hollow-cut-facebook.dde57e4a.svg",
     "static/media/hollow-cut-github.833350e3.svg": "/evervi.io/static/media/hollow-cut-github.833350e3.svg",
     "static/media/hollow-cut-twitter.a909c37a.svg": "/evervi.io/static/media/hollow-cut-twitter.a909c37a.svg",
-    "static/media/hollow-cut-youtube.f8ae7591.svg": "/evervi.io/static/media/hollow-cut-youtube.f8ae7591.svg",
-    "static/media/undraw_connected_world_wuay.568c98f9.svg": "/evervi.io/static/media/undraw_connected_world_wuay.568c98f9.svg"
+    "static/media/hollow-cut-youtube.f8ae7591.svg": "/evervi.io/static/media/hollow-cut-youtube.f8ae7591.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5fe481cf.js",
     "static/js/2.a70e3716.chunk.js",
-    "static/css/main.b3dc2b49.chunk.css",
-    "static/js/main.7634b5c6.chunk.js"
+    "static/css/main.c4846beb.chunk.css",
+    "static/js/main.3b1273da.chunk.js"
   ]
 }
