@@ -98,5 +98,69 @@ export const PROJECTS = Object.freeze([
            "Wordpress",
            "Frontity"
         ]
-     }
+     },
+
+     {
+      "title":"Moonshine Shop 2",
+      "type":"shop2",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit..222.....",
+      "url":"https://moonshine.shop/",
+      "media":[
+         "https://source.unsplash.com/random/",
+         "https://source.unsplash.com/random/"
+      ],
+      "front_url":"https://source.unsplash.com/random/",
+      "short":"moonshine-shop",
+      "keywords":[
+         "moonshine",
+         "shop",
+         "woocommerce"
+      ],
+      "stack":[
+         "Wordpress",
+         "Frontity"
+      ]
+   },
+
+   {
+      "title":"Moonshine Shop 2",
+      "type":"shop2",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit..222.....",
+      "url":"https://moonshine.shop/",
+      "media":[
+         "https://source.unsplash.com/random/",
+         "https://source.unsplash.com/random/"
+      ],
+      "front_url":"https://source.unsplash.com/random/",
+      "short":"moonshine-shop",
+      "keywords":[
+         "moonshine",
+         "shop",
+         "woocommerce"
+      ],
+      "stack":[
+         "Wordpress",
+         "Frontity"
+      ]
+   },
+
+   {
+      "title":"Moonshine Shop 2",
+      "type":"shop2",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit..222.....",
+      "url":"https://moonshine.shop/",
+      "media":[
+         "https://source.unsplash.com/random/",
+         "https://source.unsplash.com/random/"
+      ],
+      "front_url":"https://source.unsplash.com/random/",
+      "short":"moonshine-shop",
+      "keywords":[
+         "dupa"
+      ],
+      "stack":[
+         "Wordpress",
+         "Frontity"
+      ]
+   }
  ]) as IProject[];

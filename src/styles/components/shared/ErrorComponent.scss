@@ -1,0 +1,15 @@
+.ErrorComponent {
+    font-size: 25px;
+    text-align: center;
+    
+    &__Image {
+        width: 300px;
+        height: auto;
+    }
+
+    & h4 {
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+
+}

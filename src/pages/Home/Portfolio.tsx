@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from '../../components/shared/Button';
+import ProjectCard from '../../components/shared/ProjectCard';
 import { useHistory } from "react-router-dom";
-import { PROJECTS, IProject } from '../../api/db';
-import Ink from 'react-ink';
+import { PROJECTS } from '../../api/db';
+
 
 
 const Portfolio = () => {
@@ -18,40 +19,13 @@ const Portfolio = () => {
 
         <div className="Portfolio__Projects">
           {
-            PROJECTS.map(project => <ProjectCard key={project.short} {...project} />)
+            PROJECTS.filter((__p, index) => index < 3).map(project => <ProjectCard key={project.short} {...project} />)
           }
         </div>
 
         <Button brandColor="third" onClick={handleButtonClick}>SEE MORE</Button>
       </div>
     </>
-}
-
-// TODO: Przenieść ProjectCard do osobnego pliku. src/components/Shared/ProjectCard.tsx
-
-type ProjectCardProps = IProject & {};
-
-/**
- * Opisz po co ta funkcja (komponent) jest.
- */
-export const ProjectCard = (props: ProjectCardProps) => {
-  const history = useHistory();
-
-  const handleNavigation = () => {
-    const url = `/project/${props.short}`;
-    history.push(url);
-  }
-  
-  return <div className="ProjectCard" onClick={handleNavigation}>
-          <div className="ProjectCard__ImgContainer">
-            <img alt="projects front" src={props.front_url} />
-            <Ink />
-          </div>
-          <div className="ProjectCard__ContentContainer">
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
-          </div>
-        </div>
 }
 
 export default Portfolio;
