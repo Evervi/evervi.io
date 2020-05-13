@@ -14,7 +14,7 @@ const Portfolio = () => {
 
     return <>
       <div className="Portfolio">
-        <h2>😍 See our portfolio! 😍</h2>
+        <h2>See our portfolio!</h2>
 
         <div className="Portfolio__Projects">
           {
@@ -44,7 +44,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
   
   return <div className="ProjectCard" onClick={handleNavigation}>
           <div className="ProjectCard__ImgContainer">
-            <img src={props.front_url} />
+            <img alt="projects front" src={props.front_url} />
             <Ink />
           </div>
           <div className="ProjectCard__ContentContainer">
