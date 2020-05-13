@@ -1,6 +1,6 @@
 {
   "name": "company-template",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.1",
   "private": true,
   "homepage": "https://evervi.github.io/evervi.io/",
   "dependencies": {
