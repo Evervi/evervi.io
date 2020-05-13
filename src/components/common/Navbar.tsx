@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../shared/Button';
+import { useHistory } from 'react-router-dom';
 
 
 function chuj() {
@@ -7,13 +8,20 @@ function chuj() {
 }
 
 function Navbar() {
+  const history = useHistory();
+
+  const handleNavigate = (path: string) => () => {
+    history.push(path);
+  }
+
   return (
     <nav className="Navbar">
-        <h1>evervi</h1>
+        <h1 onClick={handleNavigate("/")}>evervi</h1>
 
         <div className="Navbar__menu">
-          <Button brandColor="secondary" onClick={chuj}>HOME</Button>
-          <Button brandColor="primary" onClick={chuj}>OFFER</Button>
+          <Button brandColor="secondary" onClick={handleNavigate("/")}>HOME</Button>
+          <Button brandColor="secondary" onClick={handleNavigate("/projects")}>PORTFOLIO</Button>
+          <Button brandColor="secondary" onClick={chuj}>CONTACT</Button>
         </div>
 
         <div className="Navbar__mobile-menu">
