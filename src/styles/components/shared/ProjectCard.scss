@@ -6,11 +6,10 @@
     border: 1px solid #00000024;
     cursor: pointer;
 
-    &:hover {
-        .ProjectCard__ImgContainer {
-            //background: lighten(#000000, 10%);
-        }
-    }
+    // &:hover {
+    //     .ProjectCard__ImgContainer {
+    //     }
+    // }
 
     &__ImgContainer {
         width: 100%;
