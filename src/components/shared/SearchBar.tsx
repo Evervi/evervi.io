@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useRef } from 'react';
 
 type SearchBarProps = { 
     onChange: (value: string) => void 
