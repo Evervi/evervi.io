@@ -31,7 +31,7 @@ const Project = () => {
     return <div className="Project">
             <div className="Project__Container">
                 <div className={imgWrapperClass}>
-                    <img src={thumbnail.url} />
+                    <img src={thumbnail.url} alt="project thumbnail" />
                 </div>
                 
                 <div style={{flex: 1}} className="Project__ContentWrapper">
