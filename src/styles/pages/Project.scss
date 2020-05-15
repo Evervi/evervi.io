@@ -1,0 +1,109 @@
+.Project {   
+    
+    &__Container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;   
+    }
+
+    &__BottomContainer {
+        margin-top: 200px;
+        margin: 80px 25px;
+
+        &__Desc {
+            position: relative;
+            flex: 1;
+        }
+
+    }
+    
+    &__ButtonWrapper {
+        position: relative;
+        margin-left: auto;
+    }
+
+    &__ImgWrapper {
+        position: relative;
+        min-width: 300px;
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+        margin: 0 20px;
+        
+        border-radius: 10px;
+
+        &--vertical {
+            width: 400px;
+            height: 500px;
+
+            & img {
+                width: auto;
+                height: 100%;
+
+                @media (max-width: 1200px) {
+                    width: 100%;
+                    height: auto;            
+                }
+            }
+        }
+        
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            width: 100%;
+            height: auto;
+
+            @media (max-width: 1200px) {
+                    width: auto;
+                    height: 100%;            
+            }
+        }
+    }
+    
+    &__ContentWrapper { 
+        flex: 1;
+        padding: 0 30px;
+        min-width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__StackIcons {
+            
+            & i {
+                margin: 0 5px;
+                font-size: 24px;
+                opacity: .5;
+                transition: opacity 155ms ease;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        & h1 {
+            margin-top: 0;
+            margin-bottom: .6rem;
+        }
+
+        & h2 { 
+            color: $primary;
+            font-weight: 500;
+        }
+        
+        & p {
+            margin-top: 10%;
+        }
+    }
+        
+}
+
+    
+    
+    
