@@ -18,7 +18,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
   
   return <div className="ProjectCard" onClick={handleNavigation}>
           <div className="ProjectCard__ImgContainer">
-            <img alt="projects front" src={props.front_url} />
+            <img alt="projects front" src={props.media[0].url} />
             <Ink />
           </div>
           <div className="ProjectCard__ContentContainer">
