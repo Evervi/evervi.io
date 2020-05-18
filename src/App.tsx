@@ -3,17 +3,22 @@ import Navbar from './components/common/Navbar';
 import LitteraProvider from 'react-littera';
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from './Routes';
+import Drawer, { DrawerContext } from './components/common/Drawer';
 
 function App() {
   const [locale, setLocale] = useState('en_US');
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
     <LitteraProvider language={locale} setLanguage={setLocale}>
       <Router>
-        <div className="App">
-          <Navbar />
-          <Routes />
-        </div>
+        <DrawerContext.Provider value={{ isOpen: drawerOpen, setOpen: setDrawerOpen }}>
+          <div className="App">
+            <Navbar />
+            <Routes />
+            <Drawer />
+          </div>
+        </DrawerContext.Provider>
       </Router>
     </LitteraProvider>
   );

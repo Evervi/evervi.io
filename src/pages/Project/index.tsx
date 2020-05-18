@@ -29,7 +29,7 @@ const Project = () => {
     const imgWrapperClass = cx("Project__ImgWrapper", { "Project__ImgWrapper--vertical": thumbnail.orientation === "vertical" });
 
     return <div className="Project">
-            <div className="Project__Container">
+            <Flex className="Project__Container" justifyContent="space-evenly" flexWrap="wrap">
                 <div className={imgWrapperClass}>
                     <img src={thumbnail.url} />
                 </div>
@@ -45,7 +45,7 @@ const Project = () => {
                         <Button brandColor="primary" onClick={console.log}>VISIT DEMO</Button>
                     </div>
                 </div>
-            </div>
+            </Flex>
             <div className="Project__BottomContainer">
             </div>
         </div>

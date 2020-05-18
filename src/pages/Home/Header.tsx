@@ -6,7 +6,8 @@ function Header() {
     const [translated] = useLittera(translations);
 
     return <div className="Header">
-        <div className="Header__side Header__side--wide">
+        <div className="Header__side Header__side--wide Header__side--text">
+            <div className="Header__side__dotty Header__side__dotty--mobile"></div>
             <h1 style={{ fontWeight: "bold", fontSize: "82px", marginTop: 0, marginBottom: "1rem", lineHeight: "70px" }}>
                 <span style={{ opacity: 0.9 }}>{translated.header1}</span>
                 <br />
@@ -14,7 +15,7 @@ function Header() {
             </h1>
             <p>{translated.headerDesc}</p>
         </div>
-        <div className="Header__side">
+        <div className="Header__side Header__side--fancy">
             <div className="Header__side__dotty"></div>
             <div className="Header__side__shape">
                 <div className="Header__side__shadow"></div>

@@ -12,11 +12,6 @@
 
     overflow: hidden;
 
-    @media (maxwidth: 600px) {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
     & p {
         text-align: justify !important;
     }
@@ -59,6 +54,16 @@
         background: url(../../assets/dotty.svg);
         opacity: 0.1;
         background-size: 24px;
+
+        &--mobile {
+            display: none;
+
+            @media (max-width: 600px) {
+                display: block;
+                top: 170%;
+                left: 130%;
+            }
+        }
     }
 
     &__shadow {
@@ -71,6 +76,18 @@
         background-size: 600% 600%;
         z-index: 2;
         animation: shadowGradient 10s ease-in-out infinite;
+    }
+
+    &--text {
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    &--fancy {
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 }
 

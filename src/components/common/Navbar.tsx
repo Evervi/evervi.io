@@ -2,17 +2,23 @@ import React from 'react';
 import Button from '../shared/Button';
 import { useHistory, useLocation } from 'react-router-dom';
 import cx from "classnames";
+import { useDrawer } from "./Drawer";
 
 function chuj() {
   console.log("Ci w dupę!");
 }
 
 function Navbar() {
+  const [, setDrawer] = useDrawer();
   const history = useHistory();
   let location = useLocation();
 
   const handleNavigate = (path: string) => () => {
     history.push(path);
+  }
+
+  const handleDrawer = () => {
+    setDrawer(true);
   }
 
   // Sprawdza czy w url jest aktualnie /projects.
@@ -33,8 +39,7 @@ function Navbar() {
             <Button brandColor="secondary" onClick={chuj}>CONTACT</Button>
           </div>
         <div className="Navbar__mobile-menu">
-          <Button brandColor="secondary" onClick={chuj}>---</Button>
-          <Button brandColor="secondary" onClick={chuj}>---</Button>
+          <Button brandColor="secondary" onClick={handleDrawer}>---</Button>
         </div>
       </div>
     </nav>
