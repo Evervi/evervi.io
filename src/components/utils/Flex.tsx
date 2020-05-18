@@ -47,6 +47,10 @@ const reduceProps = (props: FlexProps, ...args: string[]) => {
     return _props;
 }
 
+/**
+ * A component for easier flex-box implementation.
+ * @example <Flex justifyContent="space-between" alignItems="center">...</Flex>
+ */
 const Flex = (props: FlexProps) => {
   const reducedProps = reduceProps(props, "children", "className");
 
