@@ -39,6 +39,24 @@ export const PROJECTS = Object.freeze([
            "abc"
         ]
      }, */
+     {
+      title:"JMT Shop",
+      type:"woocommerce",
+      description:"Shop for JMT Company",
+      url:"https://i.imgur.com/hMlgzCF.png",
+      media:[ { url : "https://i.imgur.com/hMlgzCF.png", orientation: "horizontal" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
+      short:"jmt-shop",
+      keywords:[
+         "wordpress",
+         "woocommerce",
+         "shop"
+      ],
+      stack:[
+         "wordpress",
+         "woocommerce"
+      ]
+   },
+
     {
        title:"Moonshine Shop",
        type:"woocommerce",
