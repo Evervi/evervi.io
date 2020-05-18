@@ -31,7 +31,7 @@ const Project = () => {
     return <div className="Project">
             <Flex className="Project__Container" justifyContent="space-evenly" flexWrap="wrap">
                 <div className={imgWrapperClass}>
-                    <img src={thumbnail.url} />
+                    <img src={thumbnail.url} alt="project thumbnail" />
                 </div>
                 
                 <div style={{flex: 1}} className="Project__ContentWrapper">
