@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/evervi.io/precache-manifest.2cd4b7339d10d78cee4e1b30e316e0ed.js"
+  "/evervi.io/precache-manifest.2840e5ddb6ee0a990d787b461f729f36.js"
 );
 
 self.addEventListener('message', (event) => {

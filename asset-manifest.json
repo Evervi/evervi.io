@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/evervi.io/static/css/main.c85ea6e2.chunk.css",
-    "main.js": "/evervi.io/static/js/main.48c1c2e4.chunk.js",
-    "main.js.map": "/evervi.io/static/js/main.48c1c2e4.chunk.js.map",
+    "main.css": "/evervi.io/static/css/main.5ddd6268.chunk.css",
+    "main.js": "/evervi.io/static/js/main.138428fb.chunk.js",
+    "main.js.map": "/evervi.io/static/js/main.138428fb.chunk.js.map",
     "runtime-main.js": "/evervi.io/static/js/runtime-main.838f7b4d.js",
     "runtime-main.js.map": "/evervi.io/static/js/runtime-main.838f7b4d.js.map",
-    "static/js/2.fe03be1a.chunk.js": "/evervi.io/static/js/2.fe03be1a.chunk.js",
-    "static/js/2.fe03be1a.chunk.js.map": "/evervi.io/static/js/2.fe03be1a.chunk.js.map",
+    "static/js/2.9ade9451.chunk.js": "/evervi.io/static/js/2.9ade9451.chunk.js",
+    "static/js/2.9ade9451.chunk.js.map": "/evervi.io/static/js/2.9ade9451.chunk.js.map",
     "index.html": "/evervi.io/index.html",
-    "precache-manifest.2cd4b7339d10d78cee4e1b30e316e0ed.js": "/evervi.io/precache-manifest.2cd4b7339d10d78cee4e1b30e316e0ed.js",
+    "precache-manifest.2840e5ddb6ee0a990d787b461f729f36.js": "/evervi.io/precache-manifest.2840e5ddb6ee0a990d787b461f729f36.js",
     "service-worker.js": "/evervi.io/service-worker.js",
-    "static/css/main.c85ea6e2.chunk.css.map": "/evervi.io/static/css/main.c85ea6e2.chunk.css.map",
-    "static/js/2.fe03be1a.chunk.js.LICENSE.txt": "/evervi.io/static/js/2.fe03be1a.chunk.js.LICENSE.txt",
+    "static/css/main.5ddd6268.chunk.css.map": "/evervi.io/static/css/main.5ddd6268.chunk.css.map",
+    "static/js/2.9ade9451.chunk.js.LICENSE.txt": "/evervi.io/static/js/2.9ade9451.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/evervi.io/static/media/dotty.b1c22716.svg",
     "static/media/error_image.145b3e76.svg": "/evervi.io/static/media/error_image.145b3e76.svg",
     "static/media/hollow-cut-facebook.dde57e4a.svg": "/evervi.io/static/media/hollow-cut-facebook.dde57e4a.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.838f7b4d.js",
-    "static/js/2.fe03be1a.chunk.js",
-    "static/css/main.c85ea6e2.chunk.css",
-    "static/js/main.48c1c2e4.chunk.js"
+    "static/js/2.9ade9451.chunk.js",
+    "static/css/main.5ddd6268.chunk.css",
+    "static/js/main.138428fb.chunk.js"
   ]
 }
