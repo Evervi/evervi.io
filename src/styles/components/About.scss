@@ -15,7 +15,6 @@ $aboutSectionHeight: 500px;
 
         & img {
             position: absolute;
-    
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -23,6 +22,11 @@ $aboutSectionHeight: 500px;
             width: 100%;
             height: auto;
             z-index: 1;
+
+            @media (max-width: 600px) {
+                width: auto;
+                height: 100%;
+            }
         }
     }
 
