@@ -1,6 +1,5 @@
 import React, { useContext, useRef} from "react";
 import cx from "classnames";
-import Button from "../shared/Button";
 import DrawerButton from "./DrawerButton";
 import { useHistory } from "react-router-dom";
 import Flex from "../utils/Flex";
