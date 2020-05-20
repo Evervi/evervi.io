@@ -1,7 +1,7 @@
 name: Build and Deploy
 on: [push, pull_request]
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -13,9 +13,11 @@ jobs:
         run: |
           yarn install
           yarn build
-
+  deploy:
+    runs-on: ubuntu-latest
+    if: contains(github.ref, "master")
+    steps:
       - name: Deploy 🚀
-        if: contains(github.ref, "master")
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
