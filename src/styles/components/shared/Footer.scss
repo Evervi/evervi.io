@@ -1,0 +1,18 @@
+.Footer {
+    background: #212121;
+    height: 82px;
+    padding: 0 15px;
+
+    &__Container {
+        width: $containerWidth;
+        max-width: 100%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    & p {
+            margin: 0;
+            color: white;
+    }
+
+}

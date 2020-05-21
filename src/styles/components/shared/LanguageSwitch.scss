@@ -1,0 +1,23 @@
+.LanguageSwitch__Dropdown {
+
+    
+    &__Menu {
+        margin-top: initial !important;
+        top: initial !important;
+
+        bottom: 38px; /** Wysokość elementu pojedynczej opcji. */
+    }
+    
+    &__Control {
+        background: transparent !important;
+        border-radius: $borderRadius;
+        color: white !important;
+        border: 0 !important;
+        transition: all 255ms ease !important;
+        cursor: pointer !important;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.13) !important;
+        }
+    }
+}

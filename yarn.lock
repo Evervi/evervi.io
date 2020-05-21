@@ -1570,6 +1570,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-scroll@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@types/react-scroll/-/react-scroll-1.5.5.tgz#3ac574ebc57913cd20ec646bc8c694d6c5931626"
+  integrity sha512-YRV/zcOwGkBqZpXlkmBPPnk+vSJpcJDSKIMkWTtwZe4UcZxoYkRzEt3I+hbn0do+j5iPcQd/sk6XFBGhm5rIyw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^16.9.0":
   version "16.9.34"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.34.tgz#f7d5e331c468f53affed17a8a4d488cd44ea9349"
@@ -2912,7 +2919,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.6:
+classnames@^2.2.3, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -6688,6 +6695,11 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "^3.0.0"
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -8714,7 +8726,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8925,6 +8937,13 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
+react-dropdown@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/react-dropdown/-/react-dropdown-1.7.0.tgz#20287aafabdece49a6595ebe40e3fa1a37c26456"
+  integrity sha512-zFZ73pgLA32hArpE4j/7DtOEhOMg240XG5QvbAb0/VinGekkHDVIakMyAFUKC5jDz8jqXEltgriqFW9R5iCtPQ==
+  dependencies:
+    classnames "^2.2.3"
+
 react-error-overlay@^6.0.7:
   version "6.0.7"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
@@ -8940,7 +8959,7 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-littera@^1.2.2:
+react-littera@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/react-littera/-/react-littera-1.2.2.tgz#3d2a6c681dc7b19aa091841d41d61dc42349c06a"
   integrity sha512-teurGp7epIO5/cJ3YUAsfWBFVY5G2xWv8gHv9tgu3n5gi4/79UKvJH6HKk4Wg1SbFqOsFH0HcyM/BbTdme6zeg==
@@ -9033,6 +9052,14 @@ react-scripts@3.4.1:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
+
+react-scroll@^1.7.16:
+  version "1.7.16"
+  resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.7.16.tgz#814f0b97ed171aad1f27e45dad16a8444817fec8"
+  integrity sha512-f4M5AdL+3cw3MJ7c/T0hPMY2iHCeQLDXV13lRanAFQ6JIt9xyAdHCpTH9mLUQt9SQh4pRarD+Qc7KhU6qMx3Yg==
+  dependencies:
+    lodash.throttle "^4.1.1"
+    prop-types "^15.5.8"
 
 react@^16.13.1:
   version "16.13.1"
