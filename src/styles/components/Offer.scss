@@ -26,7 +26,9 @@
             clip-path: polygon(50% 0, 100% 0%, 100% 100%, 97% 100%);
             background: white;
             right: 0;
-            margin-right: -1px;
+            margin-right: -1px; 
+
+           
         }
     }
 
@@ -53,6 +55,25 @@
             flex-basis: 38px;
             margin: 0 1.5rem;
         }
+
+        &--text {
+            max-width: 30%;
+            margin: 0 auto;
+            @media (max-width: 600px) {
+                max-width: 100%;
+            }
+        }
+        
+        &--image {
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            flex-basis: 100%;
+            padding: 25px 0;
+        }
         
         &__image {
             position: relative;
@@ -67,8 +88,10 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                min-height: 100%;
             }
 
+            // TODO: Naprawić prześwitujący obraz nad slope
             &__slope {
                 position: absolute;
                 width: 16vw;

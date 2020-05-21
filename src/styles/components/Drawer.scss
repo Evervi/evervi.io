@@ -49,10 +49,5 @@
         top: 0;
         left: 0;
         transition: all 155ms ease-in-out;
-
-        // Dodaje overflow hidden do najwyższego diva, w którym znajduje się aplikacja aby zablokować przewijanie gdy drawer jest otwarty.
-        #root {
-            overflow-x: hidden;
-        }
     }
 }
