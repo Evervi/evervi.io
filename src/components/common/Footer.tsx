@@ -1,6 +1,5 @@
 import React from "react"
 import Flex from "../utils/Flex";
-import Button from "../shared/Button";
 import LanguageSwitch from "../common/LanguageSwitch";
 
 const Footer = () => {
