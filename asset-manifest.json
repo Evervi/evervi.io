@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/evervi.io/static/css/main.85865bd0.chunk.css",
+    "main.css": "/evervi.io/static/css/main.51a9d6b8.chunk.css",
     "main.js": "/evervi.io/static/js/main.65223ea0.chunk.js",
     "main.js.map": "/evervi.io/static/js/main.65223ea0.chunk.js.map",
     "runtime-main.js": "/evervi.io/static/js/runtime-main.838f7b4d.js",
@@ -8,9 +8,9 @@
     "static/js/2.9ade9451.chunk.js": "/evervi.io/static/js/2.9ade9451.chunk.js",
     "static/js/2.9ade9451.chunk.js.map": "/evervi.io/static/js/2.9ade9451.chunk.js.map",
     "index.html": "/evervi.io/index.html",
-    "precache-manifest.2051847d5a1c955b936ef22d242d1e90.js": "/evervi.io/precache-manifest.2051847d5a1c955b936ef22d242d1e90.js",
+    "precache-manifest.6973e74cd24d9d3d90ace4096a165677.js": "/evervi.io/precache-manifest.6973e74cd24d9d3d90ace4096a165677.js",
     "service-worker.js": "/evervi.io/service-worker.js",
-    "static/css/main.85865bd0.chunk.css.map": "/evervi.io/static/css/main.85865bd0.chunk.css.map",
+    "static/css/main.51a9d6b8.chunk.css.map": "/evervi.io/static/css/main.51a9d6b8.chunk.css.map",
     "static/js/2.9ade9451.chunk.js.LICENSE.txt": "/evervi.io/static/js/2.9ade9451.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/evervi.io/static/media/dotty.b1c22716.svg",
     "static/media/error_image.145b3e76.svg": "/evervi.io/static/media/error_image.145b3e76.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.838f7b4d.js",
     "static/js/2.9ade9451.chunk.js",
-    "static/css/main.85865bd0.chunk.css",
+    "static/css/main.51a9d6b8.chunk.css",
     "static/js/main.65223ea0.chunk.js"
   ]
 }
