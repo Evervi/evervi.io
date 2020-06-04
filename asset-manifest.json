@@ -1,31 +1,34 @@
 {
   "files": {
-    "main.css": "/evervi.io/static/css/main.d9d1bdab.chunk.css",
-    "main.js": "/evervi.io/static/js/main.0b64fc13.chunk.js",
-    "main.js.map": "/evervi.io/static/js/main.0b64fc13.chunk.js.map",
+    "main.css": "/evervi.io/static/css/main.07db47a1.chunk.css",
+    "main.js": "/evervi.io/static/js/main.47016698.chunk.js",
+    "main.js.map": "/evervi.io/static/js/main.47016698.chunk.js.map",
     "runtime-main.js": "/evervi.io/static/js/runtime-main.838f7b4d.js",
     "runtime-main.js.map": "/evervi.io/static/js/runtime-main.838f7b4d.js.map",
     "static/css/2.ee241de9.chunk.css": "/evervi.io/static/css/2.ee241de9.chunk.css",
-    "static/js/2.9ca083e1.chunk.js": "/evervi.io/static/js/2.9ca083e1.chunk.js",
-    "static/js/2.9ca083e1.chunk.js.map": "/evervi.io/static/js/2.9ca083e1.chunk.js.map",
+    "static/js/2.dffb3afe.chunk.js": "/evervi.io/static/js/2.dffb3afe.chunk.js",
+    "static/js/2.dffb3afe.chunk.js.map": "/evervi.io/static/js/2.dffb3afe.chunk.js.map",
     "index.html": "/evervi.io/index.html",
-    "precache-manifest.5082f00443fff085e4762a0bdb5e06f5.js": "/evervi.io/precache-manifest.5082f00443fff085e4762a0bdb5e06f5.js",
+    "precache-manifest.2c661648830144b2a58c0d36d78fc7b6.js": "/evervi.io/precache-manifest.2c661648830144b2a58c0d36d78fc7b6.js",
     "service-worker.js": "/evervi.io/service-worker.js",
     "static/css/2.ee241de9.chunk.css.map": "/evervi.io/static/css/2.ee241de9.chunk.css.map",
-    "static/css/main.d9d1bdab.chunk.css.map": "/evervi.io/static/css/main.d9d1bdab.chunk.css.map",
-    "static/js/2.9ca083e1.chunk.js.LICENSE.txt": "/evervi.io/static/js/2.9ca083e1.chunk.js.LICENSE.txt",
+    "static/css/main.07db47a1.chunk.css.map": "/evervi.io/static/css/main.07db47a1.chunk.css.map",
+    "static/js/2.dffb3afe.chunk.js.LICENSE.txt": "/evervi.io/static/js/2.dffb3afe.chunk.js.LICENSE.txt",
+    "static/media/administrative.jpg": "/evervi.io/static/media/administrative.d1b98023.jpg",
+    "static/media/development.jpg": "/evervi.io/static/media/development.900abed3.jpg",
     "static/media/index.scss": "/evervi.io/static/media/dotty.b1c22716.svg",
     "static/media/error_image.145b3e76.svg": "/evervi.io/static/media/error_image.145b3e76.svg",
     "static/media/hollow-cut-facebook.dde57e4a.svg": "/evervi.io/static/media/hollow-cut-facebook.dde57e4a.svg",
     "static/media/hollow-cut-github.833350e3.svg": "/evervi.io/static/media/hollow-cut-github.833350e3.svg",
     "static/media/hollow-cut-twitter.a909c37a.svg": "/evervi.io/static/media/hollow-cut-twitter.a909c37a.svg",
-    "static/media/hollow-cut-youtube.f8ae7591.svg": "/evervi.io/static/media/hollow-cut-youtube.f8ae7591.svg"
+    "static/media/hollow-cut-youtube.f8ae7591.svg": "/evervi.io/static/media/hollow-cut-youtube.f8ae7591.svg",
+    "static/media/marketing.jpg": "/evervi.io/static/media/marketing.7d7e9b1f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.838f7b4d.js",
     "static/css/2.ee241de9.chunk.css",
-    "static/js/2.9ca083e1.chunk.js",
-    "static/css/main.d9d1bdab.chunk.css",
-    "static/js/main.0b64fc13.chunk.js"
+    "static/js/2.dffb3afe.chunk.js",
+    "static/css/main.07db47a1.chunk.css",
+    "static/js/main.47016698.chunk.js"
   ]
 }
