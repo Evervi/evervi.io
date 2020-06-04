@@ -1,10 +1,9 @@
 import React from 'react';
 import { useLittera } from 'react-littera';
 import translations from '../../translations/pages';
-import Button from '../../components/shared/Button';
 
 function About() {
-    const [translated, , setLanguage] = useLittera(translations);
+    const [translated, , /*setLanguage*/] = useLittera(translations);
 
     return <>
         <div className="About">

@@ -23,9 +23,9 @@ function Button(props: ButtonProps) {
     const iconLeft  = props.iconLeft && React.cloneElement(props.iconLeft as any,{ gutterSide: "right" });
     const iconRight = props.iconRight && React.cloneElement(props.iconRight as any,{ gutterSide: "left" });
 
-    const handleClick = () => {
+    /*const handleClick = () => {
         props.onClick && props.onClick();
-    }
+    }*/
 
     return  <button disabled={props.disabled} type={props.type} className={rootClass} style={{ background: props.color }} onClick={ props.onClick }>
                 <Flex className="Button__Label" alignItems="center">
