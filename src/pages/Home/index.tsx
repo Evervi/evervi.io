@@ -4,6 +4,7 @@ import Header from './Header';
 import About from './About';
 import SocialMedia from "./SocialMedia";
 import Portfolio from "./Portfolio";
+import Contact from "./Contact";
 
 function Home() {
 
@@ -14,6 +15,7 @@ function Home() {
             <About />
             <SocialMedia />
             <Portfolio />
+            <Contact />
         </div>
     );
 }

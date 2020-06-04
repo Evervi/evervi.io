@@ -1,0 +1,54 @@
+.Contact {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    margin: 30px auto;
+    
+    
+
+    &__Container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+
+            &__Item {
+                
+                & .Icon {
+                    opacity: 1;
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+
+            }
+
+        &__Data {
+            display: block;
+            align-items: start;
+        }
+
+        & i {
+            font-size: 20px;
+        }
+    }
+
+    &__Form {
+
+        &__Success {
+            color: #388e3c;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;;
+        }
+        
+        &__Error {
+            color: #c62828;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;;
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+.Input {
+    border-radius: $borderRadius;
+    border: 1px solid gray;
+    background: none;
+    width: 30vw;
+    height: 30px;
+    display: block;
+    outline: 0;
+    padding: 10px 12px;
+
+    &:hover {
+        border-color: $primary;
+    }
+
+    &:focus {
+        border-color: $primary;
+    }
+
+    &--multiline {
+        resize: vertical;
+        min-height: 64px;
+    }
+
+    &--gutter {
+        margin: 10px 0;
+    }
+}

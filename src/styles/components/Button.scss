@@ -1,6 +1,7 @@
 .Button {
     position: relative;
     overflow: hidden;
+    min-width: 60px;
 
     color: #FFFFFF;
 
@@ -18,6 +19,28 @@
     
     cursor: pointer;
     user-select: none;
+
+    &--disabled {
+        background: gray !important;
+        color: white !important;
+    }
+
+
+    &__Icon {
+        font-size: 18px;
+        //margin-right: 6px;
+
+        &--margin-left {
+            margin-left: 12px;
+        }
+        &--margin-right {
+            margin-right: 12px;
+        }
+        &--margin-both {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
 }
 
 .Button__color--primary {

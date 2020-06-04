@@ -11,6 +11,7 @@ const Portfolio = () => {
 
     const handleButtonClick = () => {
       history.push("/projects");
+      document.documentElement.scrollTop = 0;
     }
 
     return <>
@@ -22,7 +23,6 @@ const Portfolio = () => {
             PROJECTS.filter((__p, index) => index < 3).map(project => <ProjectCard key={project.short} {...project} />)
           }
         </div>
-
         <Button brandColor="third" onClick={handleButtonClick}>SEE MORE</Button>
       </div>
     </>

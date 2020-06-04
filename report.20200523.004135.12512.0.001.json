@@ -1,0 +1,444 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200523.004135.12512.0.001.json",
+    "dumpEventTime": "2020-05-23T00:41:35Z",
+    "dumpEventTimeStamp": "1590187295968",
+    "processId": 12512,
+    "cwd": "C:\\Users\\xomod\\Documents\\GitHub\\evervi.io",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "--max-old-space-size=2048",
+      "C:\\Users\\xomod\\Documents\\GitHub\\evervi.io\\node_modules\\fork-ts-checker-webpack-plugin\\lib\\service.js"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18363",
+    "osVersion": "Windows 10 Pro N",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz",
+        "speed": 2694,
+        "user": 33483843,
+        "nice": 0,
+        "sys": 16874312,
+        "idle": 139216359,
+        "irq": 1763250
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz",
+        "speed": 2694,
+        "user": 32659015,
+        "nice": 0,
+        "sys": 14726812,
+        "idle": 142188390,
+        "irq": 863984
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz",
+        "speed": 2694,
+        "user": 35333250,
+        "nice": 0,
+        "sys": 13104109,
+        "idle": 141136859,
+        "irq": 320593
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz",
+        "speed": 2694,
+        "user": 36735609,
+        "nice": 0,
+        "sys": 12186656,
+        "idle": 140651953,
+        "irq": 211453
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Ethernet 4",
+        "internal": false,
+        "mac": "00:e0:4d:39:f1:f9",
+        "address": "fe80::ad26:3c94:2764:d41d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "Ethernet 4",
+        "internal": false,
+        "mac": "00:e0:4d:39:f1:f9",
+        "address": "192.168.100.11",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-3H01U5V"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff62aff19f9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff62aff5e1c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff62aff4dd8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff62b0f34cb",
+      "symbol": "v8::base::CPU::has_sse+38363"
+    },
+    {
+      "pc": "0x00007ff62b909f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff62b8f2021",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff62b7be57c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff62b7c97d0",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff62b7c62f4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff62b7bbb13",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff62b7ba184",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff62b7db36d",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff62b540c51",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff62bd54ddd",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x000001c8cfa9ef32",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2151399424,
+    "totalCommittedMemory": 2151399424,
+    "usedMemory": 2144878704,
+    "availableMemory": 48720400,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047456,
+        "used": 36600,
+        "available": 1010856
+      },
+      "old_space": {
+        "memorySize": 2122989568,
+        "committedMemory": 2122989568,
+        "capacity": 2120053056,
+        "used": 2119806840,
+        "available": 246216
+      },
+      "code_space": {
+        "memorySize": 2527232,
+        "committedMemory": 2527232,
+        "capacity": 2028512,
+        "used": 2028512,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 578640,
+        "used": 578640,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 22421504,
+        "committedMemory": 22421504,
+        "capacity": 22392520,
+        "used": 22392520,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 951.781,
+    "kernelCpuSeconds": 1544.16,
+    "cpuConsumptionPercent": 8.38379,
+    "maxRss": 2236817408,
+    "pageFaults": {
+      "IORequired": 1872458,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2015,
+      "writes": 317
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\xomod\\AppData\\Roaming",
+    "BABEL_ENV": "development",
+    "CHECK_SYNTACTIC_ERRORS": "true",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPILER_OPTIONS": "{}",
+    "COMPUTERNAME": "DESKTOP-3H01U5V",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "CONTEXT": "C:\\Users\\xomod\\Documents\\GitHub\\evervi.io",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "ESLINT": "false",
+    "ESLINT_OPTIONS": "{}",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\xomod",
+    "INIT_CWD": "C:\\Users\\xomod\\Documents\\GitHub\\evervi.io",
+    "LOCALAPPDATA": "C:\\Users\\xomod\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-3H01U5V",
+    "MEMORY_LIMIT": "2048",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "development",
+    "NODE_PATH": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"start\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v12.16.1 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "start",
+    "npm_lifecycle_script": "react-scripts start",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_package_dependencies_classnames": "^2.2.6",
+    "npm_package_dependencies_node_sass": "^4.14.1",
+    "npm_package_dependencies_react": "^16.13.1",
+    "npm_package_dependencies_react_dom": "^16.13.1",
+    "npm_package_dependencies_react_dropdown": "^1.7.0",
+    "npm_package_dependencies_react_ink": "^6.4.0",
+    "npm_package_dependencies_react_littera": "1.2.2",
+    "npm_package_dependencies_react_router_dom": "^5.2.0",
+    "npm_package_dependencies_react_scripts": "3.4.1",
+    "npm_package_dependencies_react_scroll": "^1.7.16",
+    "npm_package_dependencies_typescript": "~3.7.2",
+    "npm_package_dependencies__fortawesome_fontawesome_svg_core": "^1.2.28",
+    "npm_package_dependencies__fortawesome_free_solid_svg_icons": "^5.13.0",
+    "npm_package_dependencies__fortawesome_react_fontawesome": "^0.1.9",
+    "npm_package_dependencies__testing_library_jest_dom": "^4.2.4",
+    "npm_package_dependencies__testing_library_react": "^9.3.2",
+    "npm_package_dependencies__testing_library_user_event": "^7.1.2",
+    "npm_package_dependencies__types_classnames": "^2.2.10",
+    "npm_package_dependencies__types_jest": "^24.0.0",
+    "npm_package_dependencies__types_node": "^12.0.0",
+    "npm_package_dependencies__types_react": "^16.9.0",
+    "npm_package_dependencies__types_react_dom": "^16.9.0",
+    "npm_package_dependencies__types_react_scroll": "^1.5.5",
+    "npm_package_description": "In the project directory, you can run:",
+    "npm_package_devDependencies__types_react_router_dom": "^5.1.5",
+    "npm_package_eslintConfig_extends": "react-app",
+    "npm_package_homepage": "https://evervi.github.io/evervi.io/",
+    "npm_package_name": "evervi.io",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "npm_package_scripts_start": "react-scripts start",
+    "npm_package_scripts_test": "react-scripts test",
+    "npm_package_version": "1.0.0-alpha.1",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OneDrive": "C:\\Users\\xomod\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\xomod\\AppData\\Local\\Temp\\yarn--1590157519384-0.2240637849717786;C:\\Users\\xomod\\Documents\\GitHub\\evervi.io\\node_modules\\.bin;C:\\Users\\xomod\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Users\\xomod\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\xomod\\AppData\\Local\\atom\\bin;C:\\Users\\xomod\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\xomod\\AppData\\Roaming\\npm;C:\\Users\\xomod\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\xomod\\AppData\\Local\\Yarn\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "4501",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\xomod\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\xomod\\AppData\\Local\\Temp",
+    "TSCONFIG": "C:\\Users\\xomod\\Documents\\GitHub\\evervi.io\\tsconfig.json",
+    "TSLINT": "",
+    "TSLINTAUTOFIX": "false",
+    "TYPESCRIPT_PATH": "C:\\Users\\xomod\\Documents\\GitHub\\evervi.io\\node_modules\\typescript\\lib\\typescript.js",
+    "USERDOMAIN": "DESKTOP-3H01U5V",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-3H01U5V",
+    "USERNAME": "xomod",
+    "USERPROFILE": "C:\\Users\\xomod",
+    "USE_INCREMENTAL_API": "true",
+    "VUE": "{\"compiler\":\"vue-template-compiler\",\"enabled\":false}",
+    "WATCH": "",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\WINDOWS",
+    "WORK_DIVISION": "1",
+    "YARN_WRAP_OUTPUT": "false"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}

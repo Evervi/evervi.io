@@ -10,15 +10,9 @@ function About() {
         <div className="About">
             <div className="About__Card">
                 <h3>{translated.about}</h3>
-                <p>{translated.aboutDesc01}</p>
-                <p>Donec pretium lorem metus, ac accumsan lorem auctor sit amet. Praesent sapien tortor, fermentum nec magna sit amet, tincidunt maximus libero.</p>
-                <p>Maecenas ullamcorper pretium sapien ac venenatis. Suspendisse mattis dapibus gravida.</p>
-                <p>Praesent sapien tortor, fermentum nec magna sit amet, tincidunt maximus libero.</p>
-
-                <Button brandColor="primary" onClick={() => setLanguage("pl_PL")}>polski</Button>
-                <Button brandColor="secondary" onClick={() => setLanguage("en_US")}>english</Button>
-
-                <a href="https://google.com">Continue reading ></a>
+                <p>{translated.about1}</p>
+                <p>{translated.about2}</p>
+                <p>{translated.about3}</p>
             </div>
 
             <div className="About__Image">

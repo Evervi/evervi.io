@@ -1,11 +1,14 @@
 import React from 'react';
+import { useLittera } from 'react-littera';
+import translations from '../../translations/pages';
 
 function Offer() {
+  const [translated] = useLittera(translations);
   return (
     <div className="Offer">
-        <OfferContainer title="Creating websites" icon="fab fa-accusoft" desc="We'll create a very nice website for you!" image_url="https://source.unsplash.com/lhltMGdohc8"/>
-        <OfferContainer title="SEO" icon="fab fa-accusoft" desc="Your site will be everywhere" image_url="https://source.unsplash.com/Xeo_7HSwYsA" />
-        <OfferContainer title="Website migration" icon="fab fa-accusoft" desc="Your fucking site will be on the new server!" image_url="https://source.unsplash.com/lZ_4nPFKcV8" />
+        <OfferContainer title={translated.offerTitle01} icon="fas fa-code" desc={translated.offerDesc01} image_url={require('../../assets/development.jpg')} />
+        <OfferContainer title={translated.offerTitle02} icon="fas fa-terminal" desc={translated.offerDesc02} image_url={require('../../assets/administrative.jpg')} />
+        <OfferContainer title={translated.offerTitle03} icon="fas fa-search-dollar" desc={translated.offerDesc03} image_url={require('../../assets/marketing.jpg')} />
     </div>
   );
 }
