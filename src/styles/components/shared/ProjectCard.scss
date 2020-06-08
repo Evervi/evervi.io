@@ -1,10 +1,31 @@
 .ProjectCard {
-    min-width: 300px;
+    //min-width: 300px;
     margin-top: 30px; /* Odstep pionowy pomiedzy kartami. */
-    width: 30%;
+    width: 300px;
     border-radius: $borderRadius;
     border: 1px solid #00000024;
     cursor: pointer;
+    flex-basis: 30%;
+
+    @media (max-width: 511px) {
+        flex-basis: 100%;
+
+    }
+
+    @media (max-width: 320px){
+        max-width: 300px;
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+        flex-basis: 49%;
+    }
+
+    @media (max-width: 768px) and (min-width: 512px) {
+        flex-basis: 49%;
+    }
+
+    
+
 
     // &:hover {
     //     .ProjectCard__ImgContainer {
@@ -13,7 +34,7 @@
 
     &__ImgContainer {
         width: 100%;
-        height: 300px;
+        height: 320px;
         border-top-left-radius: $borderRadius;
         border-top-right-radius: $borderRadius;
         overflow: hidden;
@@ -26,8 +47,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             //box-shadow: 0 14px 40px 0px rgba(0, 0, 0, 0.1), 0 5px 11px 0px rgba(0, 0, 0, 0.08);
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
         }
     }
 

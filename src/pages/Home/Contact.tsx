@@ -54,11 +54,21 @@ const ContactForm = () => {
     const [messageField, setMessageField] = useState("");
     
     const [formState, setFormState] = useState<"success" | "error" | "init" | "pending">("init"); // init => pending => success / error
-
+    const [errorMessage, setErrorMessage] = useState("");
 
     const handleSubmit = (e: any) => {
         setFormState("pending");
         e.preventDefault();
+        
+        console.log(e.target.from_name);
+
+        if(!nameField || !emailField || !setMessageField) {
+            setErrorMessage("Need to fill all fields.");
+            setFormState("init");
+            return;
+        }
+
+        setErrorMessage("");
 
         emailjs.sendForm('gmail', 'template_ChzlJ3RD', e.target, process.env.REACT_APP_USER_ID)
             .then(() => {
@@ -75,10 +85,12 @@ const ContactForm = () => {
         return <ContactFormError />
 
 
-    return  <form onSubmit={handleSubmit}>
-                <Input gutter placeholder="Imię i nazwisko" value={nameField} onChange={setNameField} name="from_name" />
-                <Input gutter placeholder="E-mail" value={emailField} onChange={setEmailField} name="from_email" />
-                <Input multiline gutter placeholder="Wiadomość" value={messageField} onChange={setMessageField} name="message_html" />
+    return  <form onSubmit={handleSubmit} className="Contact__Container__Form">
+                <Input fluid gutter placeholder="Imię i nazwisko" value={nameField} onChange={setNameField} name="from_name" />
+                <Input fluid gutter placeholder="E-mail" value={emailField} onChange={setEmailField} name="from_email" />
+                <Input fluid multiline gutter placeholder="Wiadomość" value={messageField} onChange={setMessageField} name="message_html" />
+
+                { errorMessage && <p>{errorMessage}</p> }
 
                 <Button 
                     disabled={formState === "pending"} 

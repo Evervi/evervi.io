@@ -1,12 +1,18 @@
 .Input {
+    position: relative;
     border-radius: $borderRadius;
     border: 1px solid gray;
-    background: none;
-    width: 30vw;
-    height: 30px;
-    display: block;
-    outline: 0;
-    padding: 10px 12px;
+    width: auto;
+    padding: 6px 12px;
+    
+    &__element {
+        height: 30px;
+        outline: 0;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+    }
 
     &:hover {
         border-color: $primary;
@@ -23,5 +29,9 @@
 
     &--gutter {
         margin: 10px 0;
+    }
+
+    &--fluid {
+        width: auto;
     }
 }

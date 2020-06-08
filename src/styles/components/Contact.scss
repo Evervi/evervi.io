@@ -9,22 +9,36 @@
     &__Container {
         display: flex;
         justify-content: space-evenly;
-        padding: 20px;
+        align-items: baseline;
+        //padding: 20px;
+        width: 100%;
 
-            &__Item {
-                
-                & .Icon {
-                    opacity: 1;
-                    &:hover {
-                        opacity: .8;
-                    }
+        @media (max-width: 910px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__Item {
+
+            & .Icon {
+                opacity: 1;
+                &:hover {
+                    opacity: .8;
                 }
-
             }
+
+        }
 
         &__Data {
             display: block;
-            align-items: start;
+            position: relative;
+            
+        }
+        
+        &__Form {
+            display: block;
+            position: relative;
         }
 
         & i {

@@ -61,8 +61,8 @@ export const PROJECTS = Object.freeze([
        title:"Moonshine Shop",
        type:"woocommerce",
        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec augue eget neque tincidunt ornare. Nullam porttitor odio et quam pulvinar, ac volutpat ipsum scelerisque. Aenean ac porttitor mauris. Duis quis erat non nulla gravida consectetur eu ut felis. Proin laoreet, sapien sit amet accumsan laoreet, metus metus faucibus ligula, quis scelerisque lectus libero ut odio. Etiam fringilla ante ut libero dictum, et placerat ipsum lobortis. Vestibulum tincidunt consectetur eros at egestas. Etiam et sollicitudin tellus. Nunc imperdiet interdum leo, a volutpat nulla pharetra dapibus. Nullam consectetur turpis vitae enim finibus egestas. Maecenas sit amet elit vitae lectus viverra placerat. Pellentesque consectetur est non risus efficitur volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla sagittis dui in dui facilisis, non lobortis libero tristique. Nullam ac pretium est, et hendrerit sapien.",
-       url:"https://moonshine.shop/",
-       media:[ { url : "https://source.unsplash.com/random/400x500", orientation: "vertical" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
+       url:"https://i.imgur.com/JxxhWsX.png",
+       media:[ { url : "https://source.unsplash.com/random/400x500", orientation: "horizontal" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
        short:"moonshine_shop",
        keywords:[
           "moonshine",
@@ -79,7 +79,7 @@ export const PROJECTS = Object.freeze([
         "type":"woocommerce",
         "description":"That's an online store that I made for CoolCompany",
         "url":"https://moonshine.shop/",
-        "media": [ { url: "https://source.unsplash.com/random/500x400", orientation: "horizontal" }, { url : "https://source.unsplash.com/random/500x600", orientation: "vertical" }, ],
+        "media": [ { url: "https://i.imgur.com/JxxhWsX.png", orientation: "horizontal" }, { url : "https://source.unsplash.com/random/500x600", orientation: "vertical" }, ],
         "short":"moonshine-shop",
         "keywords":[
            "moonshine",
@@ -97,7 +97,7 @@ export const PROJECTS = Object.freeze([
         "type":"shop2",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit..222.....",
         "url":"https://moonshine.shop/",
-        "media":[ { url : "https://source.unsplash.com/random/500x600", orientation: "vertical" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
+        "media":[ { url : "https://i.imgur.com/JxxhWsX.png", orientation: "horizontal" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
         "short":"moonshine-shop",
         "keywords":[
            "moonshine",
@@ -115,7 +115,7 @@ export const PROJECTS = Object.freeze([
       "type":"shop2",
       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit..222.....",
       "url":"https://moonshine.shop/",
-      "media":[ { url : "https://source.unsplash.com/random/500x600", orientation: "vertical" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
+      "media":[ { url : "https://source.unsplash.com/pGvuCWRhZkA/500x1000", orientation: "vertical" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
       "short":"moonshine-shop",
       "keywords":[
          "moonshine",
