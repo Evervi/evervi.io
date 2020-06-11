@@ -59,8 +59,6 @@ const ContactForm = () => {
     const handleSubmit = (e: any) => {
         setFormState("pending");
         e.preventDefault();
-        
-        console.log(e.target.from_name);
 
         if(!nameField || !emailField || !setMessageField) {
             setErrorMessage("Need to fill all fields.");

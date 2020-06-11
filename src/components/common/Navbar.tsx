@@ -3,6 +3,7 @@ import Button from '../shared/Button';
 import { useHistory, useLocation } from 'react-router-dom';
 import cx from "classnames";
 import { useDrawer } from "./Drawer";
+import Icon from '../shared/Icon';
 
 function chuj() {
   console.log("Ci w dupę!");
@@ -39,7 +40,7 @@ function Navbar() {
             <Button brandColor="secondary" onClick={chuj}>CONTACT</Button>
           </div>
         <div className="Navbar__mobile-menu">
-          <Button brandColor="secondary" onClick={handleDrawer}>---</Button>
+          <Button brandColor="secondary" onClick={handleDrawer}><Icon name="fas fa-bars" style={{ fontSize: "24px", margin: "6px", color: "black" }} /></Button>
         </div>
       </div>
     </nav>

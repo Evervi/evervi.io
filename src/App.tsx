@@ -7,8 +7,9 @@ import Routes from './Routes';
 import Drawer, { DrawerContext } from './components/common/Drawer';
 
 function App() {
-  const [locale, setLocale] = useState("en_US");
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [locale, setLocale] = useState(parseLocale(window.navigator.language) ?? "en_US");
+
 
   return (
     <LitteraProvider language={locale} setLanguage={setLocale}>
@@ -24,6 +25,14 @@ function App() {
       </Router>
     </LitteraProvider>
   );
+}
+
+const parseLocale = (locale: string) => {
+  if (!locale) return null;
+
+  if (locale.includes("-")) return locale.replace("-", "_");
+
+  return locale + "_" + locale.toUpperCase();
 }
 
 export default App;
