@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Offer from './Offer';
 import Header from './Header';
 import About from './About';
 import SocialMedia from "./SocialMedia";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import {useLittera} from 'react-littera'
+import { translateHead } from '../../utils/translateHead';
 
 function Home() {
+    const [,language] = useLittera({});
+    useEffect (()=> {
+        translateHead(language, "home")
+
+    },[])
 
     return (
         <div style={{maxWidth: "100%"}}>
@@ -15,7 +22,7 @@ function Home() {
             <About />
             <SocialMedia />
             <Portfolio />
-            <Contact />
+            <Contact displayHr />
         </div>
     );
 }

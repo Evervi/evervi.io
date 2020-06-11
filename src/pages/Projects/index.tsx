@@ -1,8 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { PROJECTS, IProject } from '../../api/db';
 import ProjectCard from '../../components/shared/ProjectCard';
 import SearchBar from '../../components/shared/SearchBar';
 import ErrorComponent from '../../components/shared/ErrorComponent';
+import { translateHead } from '../../utils/translateHead';
+import {useLittera} from 'react-littera';
 
 const findKeywords = (haystack: string[], needle: string) => {
     return haystack.find((hay: string) => hay.includes(needle));
@@ -31,6 +33,12 @@ const filterProject = (search: string) => (project: IProject) => {
 }
 
 const Projects = () => {
+    const [,language] = useLittera({});
+    useEffect (()=> {
+        translateHead(language, "portfolio")
+  
+    },[])
+    
     const [search, setSearch] = useState('');
 
     const handleSearch = (value: string) => {

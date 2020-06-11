@@ -37,7 +37,7 @@ function Navbar() {
           <div className="Navbar__menu">
             <Button brandColor="secondary" onClick={handleNavigate("/")}>HOME</Button>
             <Button brandColor="secondary" onClick={handleNavigate("/projects")}>PORTFOLIO</Button>
-            <Button brandColor="secondary" onClick={chuj}>CONTACT</Button>
+            <Button brandColor="secondary" onClick={handleNavigate("/contact")}>CONTACT</Button>
           </div>
         <div className="Navbar__mobile-menu">
           <Button brandColor="secondary" onClick={handleDrawer}><Icon name="fas fa-bars" style={{ fontSize: "24px", margin: "6px", color: "black" }} /></Button>

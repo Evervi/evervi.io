@@ -3,6 +3,7 @@ import Home from './pages/Home/';
 import { Switch, Route } from "react-router-dom";
 import Projects from './pages/Projects';
 import Project from './pages/Project';
+import ContactPage from './pages/Contact/'
 
 function Routes() {
 
@@ -42,7 +43,14 @@ const PAGES = Object.freeze([
         label: "Project",
         path: "/project/:short",
         component: Project
-    }
+    },
+    {
+        name: "contact",
+        label: "Contact",
+        path: "/contact",
+        component: ContactPage
+    },
+
 ])
 
 export default Routes;

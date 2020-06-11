@@ -21,7 +21,6 @@ const LanguageSwitch = () => {
 
     const handleChange = (event: { label: string, value: string }) => {
        setLanguage(event.value);
-       translateHead(event.value as "en_US" | "pl_PL")
        document.documentElement.scrollTop = 0;
     }
 
@@ -39,23 +38,5 @@ const LanguageSwitch = () => {
                 placeholder="Select an language" />
 }
 
-const translateHead = (language: "en_US" | "pl_PL") => {
-    switch (language) {
-      case "en_US":
-        document.title = "Evervi.io - Homepage";
-        setMetaTag("description", "This is my description.");
-        break;
-      case "pl_PL":
-        document.title = "Evervi.io - Strona główna";
-        setMetaTag("description", "To jest mój opis. Lepszy niż twój.");
-        break;
-    }
-  };
-  
-  const setMetaTag = (selector_name: string, value: string) => {
-    document
-      ?.querySelector(`meta[name="${selector_name}"]`)
-      ?.setAttribute("content", value);
-  }
 
 export default LanguageSwitch;

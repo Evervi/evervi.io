@@ -6,16 +6,17 @@ import Button from '../../components/shared/Button';
 import Input from '../../components/shared/Input';
 import Icon from '../../components/shared/Icon';
 import Flex from '../../components/utils/Flex';
+import ContactInfoItem from './ContactInfoItem';
 
 
 
 // TODO: Stan ładowania aby użytkownik wiedział, że udało mu się submitować formularz i oczekuje on na dalsze procesowanie...
 // TODO: Blokada ponownego wysłania.
 // TODO: Recaptcha 
-const Contact = () => {
+const Contact = (props: {displayHr?: boolean}) => {
 
     return <div className="Contact">
-        <hr style={{maxWidth: "100%"}} />
+        {props.displayHr && <hr style={{maxWidth: "100%"}} />}
 
         <div className="Contact__Container">
             <ContactInfo />
@@ -28,20 +29,10 @@ const ContactInfo = () => {
     return  <div className="Contact__Container__Data">
                 <h2>Contact</h2>
                 <>
-                    <Flex className="Contact__Container__Item" alignItems="center">
-                        <Icon name="fas fa-envelope" style={{ fontSize: "24px", margin: "6px", color: "#607d8b" }} /> 
-                        support@evervi.io
-                    </Flex>
 
-                    <Flex className="Contact__Container__Item" alignItems="center">
-                        <Icon name="fab fa-facebook-messenger" style={{ fontSize: "24px", margin: "6px", color: "#0084FF"}} /> 
-                        @evervi
-                    </Flex>
-
-                    <Flex className="Contact__Container__Item" alignItems="center">
-                        <Icon name="fab fa-telegram" style={{ fontSize: "24px", margin: "6px", color: "#0088cc" }} /> 
-                        @evervi
-                    </Flex>
+                    <ContactInfoItem url="https://google.com" iconColor="#607d8b" icon="fas fa-envelope" text="support@evervi.io" />
+                    <ContactInfoItem url="https://google.com" iconColor="#0084FF" icon="fab fa-facebook-messenger" text="@evervi" />
+                    <ContactInfoItem url="https://google.com" iconColor="#0088cc" icon="fab fa-telegram" text="@evervi" />
                 </>
             </div>
 }
