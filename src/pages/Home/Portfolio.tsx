@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Button from '../../components/shared/Button';
 import ProjectCard from '../../components/shared/ProjectCard';
 import { useHistory } from "react-router-dom";

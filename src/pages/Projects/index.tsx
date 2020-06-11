@@ -37,7 +37,7 @@ const Projects = () => {
     useEffect (()=> {
         translateHead(language, "portfolio")
   
-    },[])
+    },[language])
     
     const [search, setSearch] = useState('');
 

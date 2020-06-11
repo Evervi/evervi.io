@@ -4,8 +4,6 @@ import emailjs from 'emailjs-com';
 
 import Button from '../../components/shared/Button';
 import Input from '../../components/shared/Input';
-import Icon from '../../components/shared/Icon';
-import Flex from '../../components/utils/Flex';
 import ContactInfoItem from './ContactInfoItem';
 
 

@@ -5,9 +5,6 @@ import cx from "classnames";
 import { useDrawer } from "./Drawer";
 import Icon from '../shared/Icon';
 
-function chuj() {
-  console.log("Ci w dupę!");
-}
 
 function Navbar() {
   const [, setDrawer] = useDrawer();

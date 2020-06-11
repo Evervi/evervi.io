@@ -10,7 +10,7 @@ const ContactPage = () => {
     useEffect (()=> {
         translateHead(language, "contact")
 
-    },[])
+    },[language])
     return <Contact />
 
 }

@@ -13,7 +13,7 @@ function Home() {
     useEffect (()=> {
         translateHead(language, "home")
 
-    },[])
+    },[language])
 
     return (
         <div style={{maxWidth: "100%"}}>
