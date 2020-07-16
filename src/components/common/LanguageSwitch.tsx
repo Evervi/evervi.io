@@ -1,6 +1,6 @@
 import React from "react";
 import Dropdown from 'react-dropdown';
-import { useLittera, useLitteraMethods } from "react-littera";
+import { useLitteraMethods } from "react-littera";
 
 /** Do przeniesienia (polecam App.tsx), jeśli będzie gdzieś w projekcie kolejna implementacja react-dropdown. Nie chcemy drugi raz tego importować żeby klasy CSS się nie gryzły. */
 import 'react-dropdown/style.css';

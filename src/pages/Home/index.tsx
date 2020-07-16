@@ -5,7 +5,7 @@ import About from './About';
 import SocialMedia from "./SocialMedia";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
-import {useLittera, useLitteraMethods} from 'react-littera'
+import {useLitteraMethods} from 'react-littera'
 import { translateHead } from '../../utils/translateHead';
 
 function Home() {

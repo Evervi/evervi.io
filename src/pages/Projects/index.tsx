@@ -4,7 +4,7 @@ import ProjectCard from '../../components/shared/ProjectCard';
 import SearchBar from '../../components/shared/SearchBar';
 import ErrorComponent from '../../components/shared/ErrorComponent';
 import { translateHead } from '../../utils/translateHead';
-import {useLittera, useLitteraMethods} from 'react-littera';
+import {useLitteraMethods} from 'react-littera';
 
 const findKeywords = (haystack: string[], needle: string) => {
     return haystack.find((hay: string) => hay.includes(needle));

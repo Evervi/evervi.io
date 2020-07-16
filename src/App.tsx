@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import { LitteraProvider } from 'react-littera';
 import { HashRouter as Router } from "react-router-dom";
 import Routes from './Routes';
 import Drawer, { DrawerContext } from './components/common/Drawer';
-import { translateHead } from './utils/translateHead';
+
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [locale, setLocale] = useState(parseLocale(window.navigator.language) ?? "en_US");
   
-  useEffect(()=> {
-    translateHead(locale as "en_US" | "pl_PL")
-  },[locale])
-
   return (
     <LitteraProvider locales={["en_US", "pl_PL"]}>
       <Router>
