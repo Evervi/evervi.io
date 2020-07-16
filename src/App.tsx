@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
-import LitteraProvider from 'react-littera';
+import { LitteraProvider } from 'react-littera';
 import { HashRouter as Router } from "react-router-dom";
 import Routes from './Routes';
 import Drawer, { DrawerContext } from './components/common/Drawer';
@@ -16,9 +16,9 @@ function App() {
   },[locale])
 
   return (
-    <LitteraProvider language={locale} setLanguage={setLocale}>
+    <LitteraProvider locales={["en_US", "pl_PL"]}>
       <Router>
-        <DrawerContext.Provider value={{ isOpen: drawerOpen, setOpen: setDrawerOpen }}>
+      <DrawerContext.Provider value={{ isOpen: drawerOpen, setOpen: setDrawerOpen }}>
           <div className="App">
             <Navbar />
             <Routes />

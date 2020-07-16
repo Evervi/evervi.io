@@ -3,7 +3,7 @@ import { useLittera } from 'react-littera';
 import translations from '../../translations/pages';
 
 function Header() {
-    const [translated] = useLittera(translations);
+    const translated = useLittera(translations);
 
     return <div className="Header">
         <div className="Header__side Header__side--wide Header__side--text">

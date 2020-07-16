@@ -3,7 +3,7 @@ import { useLittera } from 'react-littera';
 import translations from '../../translations/pages';
 
 function Offer() {
-  const [translated] = useLittera(translations);
+  const translated = useLittera(translations);
   return (
     <div className="Offer">
         <OfferContainer title={translated.offerTitle01} icon="fas fa-code" desc={translated.offerDesc01} image_url={require('../../assets/development.jpg')} />

@@ -5,15 +5,15 @@ import About from './About';
 import SocialMedia from "./SocialMedia";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
-import {useLittera} from 'react-littera'
+import {useLittera, useLitteraMethods} from 'react-littera'
 import { translateHead } from '../../utils/translateHead';
 
 function Home() {
-    const [,language] = useLittera({});
+    const { locale } = useLitteraMethods();
     useEffect (()=> {
-        translateHead(language, "home")
+        translateHead(locale as "pl_PL" | "en_US", "home")
 
-    },[language])
+    },[locale])
 
     return (
         <div style={{maxWidth: "100%"}}>

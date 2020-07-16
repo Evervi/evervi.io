@@ -4,7 +4,7 @@ import ProjectCard from '../../components/shared/ProjectCard';
 import SearchBar from '../../components/shared/SearchBar';
 import ErrorComponent from '../../components/shared/ErrorComponent';
 import { translateHead } from '../../utils/translateHead';
-import {useLittera} from 'react-littera';
+import {useLittera, useLitteraMethods} from 'react-littera';
 
 const findKeywords = (haystack: string[], needle: string) => {
     return haystack.find((hay: string) => hay.includes(needle));
@@ -33,11 +33,11 @@ const filterProject = (search: string) => (project: IProject) => {
 }
 
 const Projects = () => {
-    const [,language] = useLittera({});
+    const { locale } = useLitteraMethods();
     useEffect (()=> {
-        translateHead(language, "portfolio")
+        translateHead(locale as "pl_PL" | "en_US",  "portfolio")
   
-    },[language])
+    },[locale])
     
     const [search, setSearch] = useState('');
 

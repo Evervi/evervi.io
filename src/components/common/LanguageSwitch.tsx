@@ -1,6 +1,6 @@
 import React from "react";
 import Dropdown from 'react-dropdown';
-import { useLittera } from "react-littera";
+import { useLittera, useLitteraMethods } from "react-littera";
 
 /** Do przeniesienia (polecam App.tsx), jeśli będzie gdzieś w projekcie kolejna implementacja react-dropdown. Nie chcemy drugi raz tego importować żeby klasy CSS się nie gryzły. */
 import 'react-dropdown/style.css';
@@ -17,10 +17,10 @@ const mapOptions = (lang: TLanguage) => {
 const OPTIONS = Object.freeze( LANGUAGES.map(mapOptions) ) as any[]; // [ { value: "pl_PL", label: "Polski" }, { ... } ]
 
 const LanguageSwitch = () => {
-    const [, language, setLanguage] = useLittera({}) as [never, string, (language: string) => void];
+    const {locale, setLocale} = useLitteraMethods() 
 
     const handleChange = (event: { label: string, value: string }) => {
-       setLanguage(event.value);
+       setLocale(event.value);
        document.documentElement.scrollTop = 0;
     }
 
@@ -31,7 +31,7 @@ const LanguageSwitch = () => {
                 menuClassName="LanguageSwitch__Dropdown__Menu" 
                 controlClassName="LanguageSwitch__Dropdown__Control" 
 
-                value={language} 
+                value={locale} 
                 onChange={handleChange as any} 
                 options={OPTIONS} 
 

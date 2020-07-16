@@ -3,7 +3,8 @@ import { useLittera } from 'react-littera';
 import translations from '../../translations/pages';
 
 function About() {
-    const [translated, , /*setLanguage*/] = useLittera(translations);
+    const translated = useLittera(translations);
+
 
     return <>
         <div className="About">

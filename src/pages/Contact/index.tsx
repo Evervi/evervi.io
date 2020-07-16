@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import Contact from '../Home/Contact';
 import { translateHead } from '../../utils/translateHead';
-import {useLittera} from 'react-littera';
+import {useLitteraMethods} from 'react-littera';
 
 
 
 const ContactPage = () => {
-    const [,language] = useLittera({});
+    const {locale} = useLitteraMethods()
     useEffect (()=> {
-        translateHead(language, "contact")
+        translateHead(locale as "pl_PL" | "en_US", "contact")
 
-    },[language])
+    },[locale])
     return <Contact />
 
 }
