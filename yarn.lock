@@ -8964,10 +8964,10 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-littera@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/react-littera/-/react-littera-2.0.4.tgz#4303e0a26446410242308b3a15db3553d2899833"
-  integrity sha512-BILXVG9TRswVpbh+uJ0wjMxCpmwAD75JXsL5+doltRugj/DFYYEZ/voCql8aoB1r2CCIct6ZAW/7GceKZdmUAg==
+react-littera@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/react-littera/-/react-littera-2.0.6.tgz#e5760c054d825dfdb070542ee076e02f3620421c"
+  integrity sha512-u1IucIko0+NiUfQkiv1WK2IfCe7vxcLTIQAJYkaKbgmkbtqHCgoaYoqxwm13LC4E1q6Qg95Vln7laHHfTfPayw==
 
 react-router-dom@^5.2.0:
   version "5.2.0"
