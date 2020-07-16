@@ -11,7 +11,7 @@ function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   
   return (
-    <LitteraProvider locales={["en_US", "pl_PL"]}>
+    <LitteraProvider detectLocale locales={["en_US", "pl_PL"]}>
       <Router>
       <DrawerContext.Provider value={{ isOpen: drawerOpen, setOpen: setDrawerOpen }}>
           <div className="App">
@@ -26,12 +26,5 @@ function App() {
   );
 }
 
-const parseLocale = (locale: string) => {
-  if (!locale) return null;
-
-  if (locale.includes("-")) return locale.replace("-", "_");
-
-  return locale + "_" + locale.toUpperCase();
-}
 
 export default App;
