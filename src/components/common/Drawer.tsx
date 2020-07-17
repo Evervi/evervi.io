@@ -4,6 +4,7 @@ import DrawerButton from "./DrawerButton";
 import { useHistory } from "react-router-dom";
 import Flex from "../utils/Flex";
 import Portal from "../utils/Portal";
+import Ink from "react-ink";
 
 
 const DEFAULT_CONTEXT_VALUES = { isOpen: false, setOpen: (open: boolean) => {} };
@@ -52,8 +53,10 @@ const DrawerContent = ({ setOpen }: { setOpen: (value: boolean) => void }) => {
     return <Flex className="Drawer__Container" flexDirection="column" justifyContent="space-between">
             <h1 style={{ padding: "15px 0" }} onClick={console.log}>evervi</h1>
             <div style={{flex: 1}}>
+                <Ink />
                 <DrawerButton active={pathName === "/"} icon={<i className="fas fa-home"></i>} onClick={handleNavigate("/")} >Home</DrawerButton>
                 <DrawerButton active={pathName === "/projects"} icon={<i className="fas fa-image"></i>} onClick={handleNavigate("/projects")} >Portfolio</DrawerButton>
+                <DrawerButton active={pathName === "/contact"} icon={<i className="fas fa-address-book"></i>} onClick={handleNavigate("/contact")} >Contact</DrawerButton>
             </div>
         </Flex>
 }
