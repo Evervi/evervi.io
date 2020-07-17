@@ -3,9 +3,12 @@ import Button from '../../components/shared/Button';
 import ProjectCard from '../../components/shared/ProjectCard';
 import { useHistory } from "react-router-dom";
 import { PROJECTS } from '../../api/db';
+import { useLittera } from 'react-littera';
+import translations from '../../translations/pages';
 
 
 const Portfolio = () => {
+  const translated = useLittera(translations);
 
     const history = useHistory();
 
@@ -16,14 +19,14 @@ const Portfolio = () => {
 
     return <>
       <div className="Portfolio">
-        <h2>Recent works</h2>
+        <h2>{translated.recentWorks}</h2>
 
         <div className="Portfolio__Projects">
           {
             PROJECTS.filter((__p, index) => index < 3).map(project => <ProjectCard key={project.short} {...project} />)
           }
         </div>
-        <Button brandColor="third" onClick={handleButtonClick}>SEE MORE</Button>
+        <Button brandColor="third" onClick={handleButtonClick}>{translated.seeMore}</Button>
       </div>
     </>
 }

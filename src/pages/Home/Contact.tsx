@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import translations from '../../translations/pages';
+import { useLittera } from 'react-littera';
 
 import emailjs from 'emailjs-com';
 
 import Button from '../../components/shared/Button';
 import Input from '../../components/shared/Input';
 import ContactInfoItem from './ContactInfoItem';
+
 
 
 
@@ -24,8 +27,9 @@ const Contact = (props: {displayHr?: boolean}) => {
 }
 
 const ContactInfo = () => {
+    const translated = useLittera(translations);
     return  <div className="Contact__Container__Data">
-                <h2>Contact</h2>
+                <h2>{translated.contactTitle}</h2>
                 <>
 
                     <ContactInfoItem url="https://google.com" iconColor="#607d8b" icon="fas fa-envelope" text="support@evervi.io" />
@@ -44,6 +48,8 @@ const ContactForm = () => {
     
     const [formState, setFormState] = useState<"success" | "error" | "init" | "pending">("init"); // init => pending => success / error
     const [errorMessage, setErrorMessage] = useState("");
+
+    const translated = useLittera(translations);
 
     const handleSubmit = (e: any) => {
         setFormState("pending");
@@ -71,11 +77,11 @@ const ContactForm = () => {
     if(formState === "error")
         return <ContactFormError />
 
-
+        
     return  <form onSubmit={handleSubmit} className="Contact__Container__Form">
-                <Input fluid gutter placeholder="Imię i nazwisko" value={nameField} onChange={setNameField} name="from_name" />
+                <Input fluid gutter placeholder={translated.inputContactName} value={nameField} onChange={setNameField} name="from_name" />
                 <Input fluid gutter placeholder="E-mail" value={emailField} onChange={setEmailField} name="from_email" />
-                <Input fluid multiline gutter placeholder="Wiadomość" value={messageField} onChange={setMessageField} name="message_html" />
+                <Input fluid multiline gutter placeholder={translated.inputContactMessage} value={messageField} onChange={setMessageField} name="message_html" />
 
                 { errorMessage && <p>{errorMessage}</p> }
 
@@ -83,13 +89,14 @@ const ContactForm = () => {
                     disabled={formState === "pending"} 
                     iconRight={ <Button.Icon name="fas fa-chevron-right" /> } 
                     brandColor="secondary" 
-                    type="submit">SEND</Button>
+                    type="submit">{translated.sendMessageButton}</Button>
             </form>
 }
 
 const ContactFormSuccess = () => {
+    const translated = useLittera(translations);
 
-    return <div className="Contact__Form__Success">Your message has been sent. We'll reply you as soon as possible!</div>
+    return <div className="Contact__Form__Success">{translated.contactFormSuccess}</div>
 }
 
 const ContactFormError = () => {

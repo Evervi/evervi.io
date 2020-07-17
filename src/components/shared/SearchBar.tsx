@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import translations from '../../translations/pages';
+import { useLittera } from 'react-littera';
 
 type SearchBarProps = { 
     onChange: (value: string) => void 
@@ -17,8 +19,10 @@ const SearchBar = ({ onChange }: SearchBarProps) => {
         onChange(val);
     };
 
+    const translated = useLittera(translations);
+
     return <div className="SearchBar">
-        <input placeholder="Search for something..." onChange={handleChange} />
+        <input placeholder={translated.searchInputText} onChange={handleChange} />
     </div>
 }
 

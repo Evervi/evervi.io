@@ -1,4 +1,15 @@
 export default {
+    //NAVBAR
+    contactButton: {
+        en_US: "CONTACT",
+        pl_PL: "KONTAKT"
+    },
+    homeButton: {
+        en_US: "HOME",
+        pl_PL: "STRONA GŁÓWNA"
+    },
+
+    //HOME
     offerTitle01: {
         en_US: "Web development",
         pl_PL: "Tworzenie stron internetowych"
@@ -50,5 +61,56 @@ export default {
     about3: {
         en_US: "We believe that with our flexible approach to each customer, we will be able to gain recognition in the market and make cooperation with us comfortable and trouble-free.",
         pl_PL: "Wierzymy, że z naszym elastycznym podejściem do każdego klienta uda nam się zdobyć uznanie na rynku oraz sprawić, że współpraca z nami będzie komfortowa oraz bezproblemowa."
-    }
+    },
+    recentWorks: {
+        en_US: "Recent works",
+        pl_PL: "Najnowsze projekty"
+    },
+    seeMore: {
+        en_US: "SEE MORE",
+        pl_PL: "ZOBACZ WIĘCEJ"
+    },
+    contactTitle: {
+        en_US: "Contact",
+        pl_PL: "Kontakt"
+    },
+    inputContactName: {
+        en_US: "Name and surname",
+        pl_PL: "Imię i nazwisko"
+    },
+    inputContactMessage: {
+        en_US: "Your message",
+        pl_PL: "Wiadomość"
+    },
+    sendMessageButton: {
+        en_US: "SEND",
+        pl_PL: "WYŚLIJ"
+    },
+    contactFormSuccess: {
+        en_US: "Your message has been sent. We'll reply you as soon as possible!",
+        pl_PL: "Twoja wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe!"
+    },
+
+    //PROJECTS SEARCH
+    searchInputText: {
+        en_US: "Search for something...",
+        pl_PL: "Wpisz szukaną frazę..."
+    },
+    searchErrorTitle: {
+        en_US: "Oops...",
+        pl_PL: "Upss..."
+    },
+    searchErrorText: {
+        en_US: "No search results",
+        pl_PL: "Brak wyników wyszukiwania"
+    },
+
+    //PROJECT
+    visitDemoButton: {
+        en_US: "VISIT DEMO",
+        pl_PL: "ZOBACZ DEMO"
+    }, 
+
+
+
 }
