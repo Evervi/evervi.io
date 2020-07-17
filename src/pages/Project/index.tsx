@@ -5,6 +5,8 @@ import Button from "../../components/shared/Button";
 import Flex from "../../components/utils/Flex";
 import cx from "classnames";
 import { STACK_ICONS_MAP, STACK_ICONS, STACK_LABELS_MAP } from '../../api/utils';
+import translations from '../../translations/pages';
+import { useLittera } from 'react-littera';
 
 /** Wyciąga id z url i zwraca adekwatny projekt z listy projektów. */
 const useProject = () => {
@@ -15,6 +17,7 @@ const useProject = () => {
 
 const Project = () => {
     const data = useProject();
+    const translated = useLittera(translations);
 
     
     // Wyświetlamy error handler w razie gdyby produkt nie istniał.
@@ -42,7 +45,7 @@ const Project = () => {
                         <p>{data?.description}</p>              
                     </div>
                     <div className="Project__ButtonWrapper">
-                        <Button brandColor="primary" onClick={console.log}>VISIT DEMO</Button>
+                        <Button brandColor="primary" onClick={console.log}>{translated.visitDemoButton}</Button>
                     </div>
                 </div>
             </Flex>
