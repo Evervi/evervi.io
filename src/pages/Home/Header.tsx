@@ -19,9 +19,8 @@ function Header() {
             <div className="Header__side__dotty"></div>
             <div className="Header__side__shape">
                 <div className="Header__side__shadow"></div>
-                <img src="https://source.unsplash.com/700x700/?it,server,client,connection,code,website"  alt="header"/>
+                <img src="https://i.imgur.com/NwSknIc.jpg"  alt="header"/>
             </div>
-            <p style={{margin: 0, marginTop: "20px", textAlign: "right", float: "right", opacity: 0.5}}>powered by <b>Unsplash</b></p>
         </div>
     </div>
 }
