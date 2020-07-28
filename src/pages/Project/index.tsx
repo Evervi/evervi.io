@@ -1,5 +1,5 @@
 import React from 'react';
-import { PROJECTS } from '../../api/db';
+import { useProjectsList } from '../../api/db';
 import { useParams } from 'react-router-dom';
 import Button from "../../components/shared/Button";
 import Flex from "../../components/utils/Flex";
@@ -11,7 +11,7 @@ import { useLittera } from 'react-littera';
 /** Wyciąga id z url i zwraca adekwatny projekt z listy projektów. */
 const useProject = () => {
     const { short } = useParams();
-
+    const PROJECTS = useProjectsList();
     return PROJECTS.find(pr => pr.short === short);
 }
 
@@ -19,14 +19,17 @@ const Project = () => {
     const data = useProject();
     const translated = useLittera(translations);
 
-    
     // Wyświetlamy error handler w razie gdyby produkt nie istniał.
     if(data === null) return <div>Nie znaleziono projektu</div>
     // Wyświetlamy loader...
     if(!data) return <div>Loading...</div>
-    
+
     // Nasz thumbnail wyjęty z data.media gotowy do maltretowania.
     const thumbnail = data.media[0];
+
+    const handleOpenDemo = () => {
+        window.open(data.demo_url, '_blank');
+    }
 
     // Sklejamy klase dla "Project__ImgWrapper" plus "Project__ImgWrapper--vertical" pod WARUNKIEM, że thumbnail.orientation ma podaną wartość "vertical"
     const imgWrapperClass = cx("Project__ImgWrapper", { "Project__ImgWrapper--vertical": thumbnail.orientation === "vertical" });
@@ -45,7 +48,7 @@ const Project = () => {
                         <p>{data?.description}</p>              
                     </div>
                     <div className="Project__ButtonWrapper">
-                        <Button brandColor="primary" onClick={console.log}>{translated.visitDemoButton}</Button>
+                        <Button brandColor="primary" onClick={handleOpenDemo}>{translated.visitDemoButton}</Button>
                     </div>
                 </div>
             </Flex>

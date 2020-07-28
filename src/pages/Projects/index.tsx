@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect } from 'react';
-import { PROJECTS, IProject } from '../../api/db';
+import { useProjectsList, IProject } from '../../api/db';
 import ProjectCard from '../../components/shared/ProjectCard';
 import SearchBar from '../../components/shared/SearchBar';
 import ErrorComponent from '../../components/shared/ErrorComponent';
@@ -34,9 +34,9 @@ const filterProject = (search: string) => (project: IProject) => {
 
 const Projects = () => {
     const { locale } = useLitteraMethods();
+    const PROJECTS = useProjectsList();
     useEffect (()=> {
         translateHead(locale as "pl_PL" | "en_US",  "portfolio")
-  
     },[locale])
     
     const [search, setSearch] = useState('');
@@ -52,7 +52,7 @@ const Projects = () => {
         if(search && matchSearch) return matchSearch;
 
         return [];
-    }, [search]);
+    }, [search, PROJECTS]);
 
     return <div className="Projects">
             <div className="Projects__HalfKolo"><div></div></div>

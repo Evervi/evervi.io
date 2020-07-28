@@ -111,6 +111,60 @@ export default {
         pl_PL: "ZOBACZ DEMO"
     }, 
 
+        //JMT SHOP
+        jmtShopTitle: {
+            en_US: "JMT Online Shop",
+            pl_PL: "JMT Sklep internetowy"
+        }, 
+        jmtShopDescription: {
+            en_US: "An online store commissioned by „JMT”, based on the WooCommerce platform.",
+            pl_PL: "Sklep internetowy stworzony na zlecenie firmy „JMT”, oparty o platformę WooCommerce."
+        },
+        
+        //Online Money Site
+        OmsTitle: {
+            en_US: "Online Money Site",
+            pl_PL: "Online Money Site"
+        }, 
+        OmsDescription: {
+            en_US: "Website and blog about cryptocurrencies and making money online..",
+            pl_PL: "Strona oraz blog o tematyce kryptowalut oraz zarabiania pieniędzy w sieci."
+        },
+
+        //PeggyStore
+        PSTitle: {
+            en_US: "PeggyStore",
+            pl_PL: "PeggyStore"
+        }, 
+        PSDescription: {
+            en_US: "An online store commissioned by „PeggyStore”, based on the WooCommerce platform.",
+            pl_PL: "Sklep internetowy stworzony na zlecenie „PeggyStore”, oparty o platformę WooCommerce."
+        },
+
+        //JOTMG
+        JOTMGtitle: {
+            en_US: "JOTMG",
+            pl_PL: "JOTMG"
+        }, 
+        JOTMGdescription: {
+            en_US: "A website for the „JOTMG” brand, which produces and sells fencing accessories.",
+            pl_PL: "Strona internetowa dla marki „JOTMG”, zajmującej się produkcją oraz sprzedażą akcesoriów do ogrodzeń."
+        },
+
+
+        //KREOTEKA
+        KreotekaTitle: {
+            en_US: "Kreoteka",
+            pl_PL: "Kreoteka"
+        }, 
+        KreotekaDescription: {
+            en_US: "Website for the „Kreoteka” marketing agency.",
+            pl_PL: "Strona internetowa dla agencji marketingowej „Kreoteka”."
+        },        
+
+
+
+
 
 
 }
