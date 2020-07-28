@@ -33,7 +33,7 @@ function Navbar() {
   return (
     <nav className={navbarClasses}>
       <div className="Navbar__Container">
-          <h1 onClick={handleNavigate("/")}>evervi</h1>
+          <h1 style={{userSelect: "none"}} onClick={handleNavigate("/")}>evervi</h1>
 
           <div className="Navbar__menu">
             <Button brandColor="secondary" onClick={handleNavigate("/")}>{translated.homeButton}</Button>
