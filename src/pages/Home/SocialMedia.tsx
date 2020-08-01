@@ -5,9 +5,9 @@ const SocialMedia = () => {
 
     return <div className="SocialMedia">
         <MediaIcon url="https://github.com/Evervi" media="github" />
-        <MediaIcon url="#" media="facebook" />
-        <MediaIcon url="#" media="twitter" />
-        <MediaIcon url="#" media="youtube" />
+        <MediaIcon url="https://twitter.com/evervi_io" media="twitter" />
+        <MediaIcon url="https://www.facebook.com/evervi.io" media="facebook" />
+        {/* <MediaIcon url="#" media="youtube" /> */}
     </div>
 }
 
