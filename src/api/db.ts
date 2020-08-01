@@ -54,7 +54,7 @@ export const useProjectsList = () => {
          // description:"Shop for JMT Company",
          description:  `${translated.jmtShopDescription}`,
          url:"https://i.imgur.com/JxxhWsX.png",
-         demo_url: "https://google.com",
+         demo_url: "https://sklep.jmt.com.pl/",
          media:[ { url : "https://i.imgur.com/JxxhWsX.png", orientation: "horizontal" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
          short:"jmt-shop",
          keywords:[
@@ -73,7 +73,7 @@ export const useProjectsList = () => {
           type:"woocommerce",
           description:`${translated.OmsDescription}`,
           url:"https://i.imgur.com/JxxhWsX.png",
-          demo_url: "https://google.com",
+          demo_url: "http://online-money.site/",
           media:[ { url : "https://i.imgur.com/SwVaXRb.png", orientation: "horizontal" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
           short:"online-money-site",
           keywords:[
@@ -90,7 +90,7 @@ export const useProjectsList = () => {
            "type":"woocommerce",
            "description":`${translated.PSDescription}`,
            "url":"https://moonshine.shop/",
-           demo_url: "https://google.com",
+           demo_url: "http://peggystore.pl/",
            "media": [ { url: "https://i.imgur.com/Qj0ofyQ.png", orientation: "horizontal" }, { url : "https://source.unsplash.com/random/500x600", orientation: "vertical" }, ],
            "short":"peggystore",
            "keywords":[
@@ -109,7 +109,7 @@ export const useProjectsList = () => {
          "type":"woocommerce",
          "description":`${translated.KreotekaDescription}`,
          "url":"https://moonshine.shop/",
-         demo_url: "https://google.com",
+         demo_url: "http://kreoteka.eu/",
          "media": [ { url: "https://i.imgur.com/LUKsWqb.png", orientation: "horizontal" }, { url : "https://source.unsplash.com/random/500x600", orientation: "vertical" }, ],
          "short":"kreoteka",
          "keywords":[
@@ -127,7 +127,7 @@ export const useProjectsList = () => {
            "type":"shop2",
            "description":`${translated.JOTMGdescription}`,
            "url":"https://moonshine.shop/",
-           demo_url: "https://google.com",
+           demo_url: "http://jotmg.pl/",
            "media":[ { url : "https://i.imgur.com/ETHJ2dz.png", orientation: "horizontal" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
            "short":"jotmg",
            "keywords":[
