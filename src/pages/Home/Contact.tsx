@@ -32,9 +32,9 @@ const ContactInfo = () => {
                 <h2>{translated.contactTitle}</h2>
                 <>
 
-                    <ContactInfoItem url="https://google.com" iconColor="#607d8b" icon="fas fa-envelope" text="support@evervi.io" />
-                    <ContactInfoItem url="https://google.com" iconColor="#0084FF" icon="fab fa-facebook-messenger" text="@evervi" />
-                    <ContactInfoItem url="https://google.com" iconColor="#0088cc" icon="fab fa-telegram" text="@evervi" />
+                    <ContactInfoItem url="mailto:support@evervi.io" iconColor="#607d8b" icon="fas fa-envelope" text="support@evervi.io" />
+                    <ContactInfoItem url="https://www.messenger.com/t/evervi.io" iconColor="#0084FF" icon="fab fa-facebook-messenger" text="@evervi.io" />
+                    <ContactInfoItem url="https://google.com" iconColor="#0088cc" icon="fab fa-telegram" text="@damblo" />
                 </>
             </div>
 }
