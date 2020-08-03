@@ -123,8 +123,8 @@ export default {
         
         //Online Money Site
         OmsTitle: {
-            en_US: "Online Money Site",
-            pl_PL: "Online Money Site"
+            en_US: "Easy Money Site",
+            pl_PL: "Easy Money Site"
         }, 
         OmsDescription: {
             en_US: "Website and blog about cryptocurrencies and making money online..",

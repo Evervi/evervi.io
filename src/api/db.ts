@@ -73,7 +73,7 @@ export const useProjectsList = () => {
           type:"woocommerce",
           description:`${translated.OmsDescription}`,
           url:"https://i.imgur.com/JxxhWsX.png",
-          demo_url: "http://online-money.site/",
+          demo_url: "http://easymoney.site/",
           media:[ { url : "https://i.imgur.com/SwVaXRb.png", orientation: "horizontal" }, { url: "https://source.unsplash.com/random/600x500", orientation: "horizontal" } ],
           short:"online-money-site",
           keywords:[
