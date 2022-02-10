@@ -18,7 +18,7 @@
     "@types/react-scroll": "^1.5.5",
     "classnames": "^2.2.6",
     "emailjs-com": "^2.4.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-dropdown": "^1.7.0",
